@@ -1,0 +1,3325 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Beauty Of Beaches</title>
+    <link rel="icon" href="images/logo_bottom_line_white.png">
+<!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+<!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<!-- stylesheet  -->
+    <link rel="stylesheet" href="style.css">
+  <!--Google font link  -->
+   <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<!-- font awesome -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"&gt;>
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="100">
+<!-- navbar  -->
+<nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top">
+  <div class="container-fluid px-4">
+    
+    <a class="navbar-brand" href="#home">
+      <img src="images/logo_bottom_line_white.png" alt="Logo" width="75px" height="75px">
+    </a>
+
+    <button class="navbar-toggler nav-bg" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#beaches">Beaches</a></li>
+        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#routes-section">Routes</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+     <div class="guest">
+                    <span class="online"></span>
+                    Visitors: <strong id="visitor-count">1</strong>
+                </div>
+  </div>
+</nav>
+<!-- home section-->
+<section id="home" style="margin-top: 15px;">
+ <!-- hero  -->
+  <div class="card">
+    <div class="banner-text-container">
+        <h1 class="banner-title">
+            Beauty Of <span>Beaches</span>
+        </h1>
+        <p class="banner-description">
+           Where every wave tells a story.
+        </p>
+        <button class="banner-btn"><a href="#beaches">Explore Beaches →</a></button>
+    </div>
+    <img src="images/hero img.png" alt="" width="100%" height="40%">
+  </div>
+</section>
+<!-- wave -->
+    <div class="wave-top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="display: block; width:100%; height:auto;">
+          <path fill="#ffffff" fill-opacity="1" d="M0,160L48,154.7C96,149,192,139,288,149.3C384,160,480,192,576,186.7C672,181,768,139,864,128C960,117,1056,139,1152,154.7C1248,171,1344,181,1392,186.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+    </div>
+    <!-- Popular Beaches -->
+  <header class="pop-hero">
+        <span class="pop-eyebrow">SUN, SEA &amp; SAND</span>
+        <h1>Popular <em>Beaches</em></h1>
+        <svg class="pop-squiggle" viewBox="0 0 150 14" fill="none" aria-hidden="true">
+            <path d="M2 7 Q 14 -1 26 7 T 50 7 T 74 7 T 98 7 T 122 7 T 148 7" stroke="#ee7b5a" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+        <p>Nine shorelines worth the trip, from quiet coves to golden surf breaks.</p>
+    </header>
+    <section class="pop-places-section">
+        <div class="pop-card-grid">
+            <!-- Card 1 -->
+            <article class="pop-place-card">
+                <div class="pop-card-image">
+                    <span class="pop-card-tag">BEACH ESCAPE</span>
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80" alt="Tropical Beach" loading="lazy" onerror="this.onerror=null;this.src='image/images.jfif'">
+                </div>
+                <div class="pop-card-content">
+                    <h3>Tropical Beach</h3>
+                    <p>Discover crystal-clear waters and a peaceful coastal escape.</p>
+                    <a href="#beaches" class="pop-card-button">Explore Place <span>↗</span></a>
+                </div>
+            </article>
+ 
+            <!-- Card 2 -->
+            <article class="pop-place-card">
+                <div class="pop-card-image">
+                    <span class="pop-card-tag">OCEAN VIEWS</span>
+                    <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=900&q=80" alt="Sunny Beach" loading="lazy" onerror="this.onerror=null;this.src='image/3.jfif'">
+                </div>
+                <div class="pop-card-content">
+                    <h3>Sunny Beach</h3>
+                    <p>Enjoy golden sands, refreshing waves and sunny days.</p>
+                    <a href="#beaches" class="pop-card-button">Explore Place <span>↗</span></a>
+                </div>
+            </article>
+ 
+            <!-- Card 3 -->
+            <article class="pop-place-card">
+                <div class="pop-card-image">
+                    <span class="pop-card-tag">HIDDEN PARADISE</span>
+                    <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=900&q=80" alt="Paradise Beach" loading="lazy" onerror="this.onerror=null;this.src='image/images%20(1).jfif'">
+                </div>
+                <div class="pop-card-content">
+                    <h3>Paradise Beach</h3>
+                    <p>Escape the busy world and enjoy the beauty of nature.</p>
+                    <a href="#beaches" class="pop-card-button">Explore Place <span>↗</span></a>
+                </div>
+            </article>
+ 
+            <!-- Card 4 -->
+            <article class="pop-place-card">
+                <div class="pop-card-image">
+                    <span class="pop-card-tag">GOLDEN SHORES</span>
+                    <img src="https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?auto=format&fit=crop&w=900&q=80" alt="Coral Bay" loading="lazy" onerror="this.onerror=null;this.src='image/2.jfif'">
+                </div>
+                <div class="pop-card-content">
+                    <h3>Coral Bay</h3>
+                    <p>Experience vibrant marine life and breathtaking sunset views.</p>
+                    <a href="#beaches" class="pop-card-button">Explore Place <span>↗</span></a>
+                </div>
+            </article>
+ 
+            <!-- Card 5 -->
+            <article class="pop-place-card">
+                <div class="pop-card-image">
+                    <span class="pop-card-tag">AZURE WAVES</span>
+                    <img src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=900&q=80" alt="Blue Lagoon" loading="lazy" onerror="this.onerror=null;this.src='image/4.jfif'">
+                </div>
+                <div class="pop-card-content">
+                    <h3>Blue Lagoon</h3>
+                    <p>Relax in calm, turquoise waters surrounded by lush greenery.</p>
+                    <a href="#beaches" class="pop-card-button">Explore Place <span>↗</span></a>
+                </div>
+            </article>
+ 
+            <!-- Card 6 -->
+            <article class="pop-place-card">
+                <div class="pop-card-image">
+                    <span class="pop-card-tag">ISLAND BREEZE</span>
+                    <img src="https://images.unsplash.com/photo-1473116763249-2faaef81ccda?auto=format&fit=crop&w=900&q=80" alt="Canada Beach" loading="lazy" onerror="this.onerror=null;this.src='image/4.jfif'">
+                </div>
+                <div class="pop-card-content">
+                    <h3>Canada Beach</h3>
+                    <p>Stroll under swaying palm trees along the soft white coastline.</p>
+                    <a href="#beaches" class="pop-card-button">Explore Place <span>↗</span></a>
+                </div>
+            </article>
+ 
+            <!-- Card 7 -->
+            <article class="pop-place-card">
+                <div class="pop-card-image">
+                    <span class="pop-card-tag">SERENE COAST</span>
+                    <img src="https://images.unsplash.com/photo-1520454974749-611b7248ffdb?auto=format&fit=crop&w=900&q=80" alt="Goa Beach" loading="lazy" onerror="this.onerror=null;this.src='image/3.jfif'">
+                </div>
+                <div class="pop-card-content">
+                    <h3>Goa Beach</h3>
+                    <p>A tranquil getaway perfect for long walks and peaceful moments.</p>
+                    <a href="#beaches" class="pop-card-button">Explore Place <span>↗</span></a>
+                </div>
+            </article>
+ 
+            <!-- Card 8 -->
+            <article class="pop-place-card">
+                <div class="pop-card-image">
+                    <span class="pop-card-tag">WAVE RIDER</span>
+                    <img src="https://images.unsplash.com/photo-1505228395891-9a51e7e86bf6?auto=format&fit=crop&w=900&q=80" alt="Sunset Cove" loading="lazy" onerror="this.onerror=null;this.src='image/images.jfif'">
+                </div>
+                <div class="pop-card-content">
+                    <h3>Sunset Cove</h3>
+                    <p>Famous for incredible surf breaks and stunning evening views.</p>
+                    <a href="#beaches" class="pop-card-button">Explore Place <span>↗</span></a>
+                </div>
+            </article>
+ 
+            <!-- Card 9 -->
+            <article class="pop-place-card">
+                <div class="pop-card-image">
+                    <span class="pop-card-tag">ROYAL RETREAT</span>
+                    <img src="https://images.unsplash.com/photo-1471922694854-ff1b63b20054?auto=format&fit=crop&w=900&q=80" alt="Crystal Beach" loading="lazy" onerror="this.onerror=null;this.src='image/2.jfif'">
+                </div>
+                <div class="pop-card-content">
+                    <h3>Crystal Beach</h3>
+                    <p>Pure white sand and crystal clear waters for an unforgettable trip.</p>
+                    <a href="#beaches" class="pop-card-button">Explore Place <span>↗</span></a>
+                </div>
+            </article>
+        </div>
+    </section>
+<!-- beaches section  -->
+<section id="beaches">
+  <!-- beaches -->
+    <div class="header-section">
+        <h1 class="page-title"> World Beach Directory</h1>
+        <div class="filter-container">
+            <button onclick="filterZone('north')" class="fltr-btn active" id="btn-north">North Zone </button>
+            <button onclick="filterZone('east')" class="fltr-btn" id="btn-east">East Zone </button>
+            <button onclick="filterZone('west')" class="fltr-btn" id="btn-west">West Zone </button>
+            <button onclick="filterZone('south')" class="fltr-btn" id="btn-south">South Zone </button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" id="cards-row">
+
+            <!-- NORTH ZONE CARDS (Default visible) -->
+            <div class="col-lg-4 col-md-6 col-sm-12 card-wrapper north">
+                <div class="beach-card" onclick="openModal('reynisfjara-beach-modal')">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" alt="Reynisfjara Beach">
+                    <div class="info">
+                        <span>📍</span>
+                        <div class="text">
+                            <p class="name">Reynisfjara Beach</p>
+                            <p class="place">Vik, Iceland</p>
+                        </div>
+                        <button class="arrow" aria-label="Details">→</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 card-wrapper north">
+                <div class="beach-card" onclick="openModal('lofoten-beach-modal')">
+                    <img src="https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&fit=crop&w=600&q=80" alt="Lofoten Beach">
+                    <div class="info">
+                        <span>📍</span>
+                        <div class="text">
+                            <p class="name">Lofoten Beach</p>
+                            <p class="place">Norway</p>
+                        </div>
+                        <button class="arrow" aria-label="Details">→</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 card-wrapper north">
+                <div class="beach-card" onclick="openModal('skagen-beach-modal')">
+                    <img src="https://images.unsplash.com/photo-1509233725247-49e657c54213?auto=format&fit=crop&w=600&q=80" alt="Skagen Beach">
+                    <div class="info">
+                        <span>📍</span>
+                        <div class="text">
+                            <p class="name">Skagen Beach</p>
+                            <p class="place">Denmark</p>
+                        </div>
+                        <button class="arrow" aria-label="Details">→</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 card-wrapper north">
+                <div class="beach-card" onclick="openModal('durdle-door-beach-modal')">
+                    <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=600&q=80" alt="Durdle Door Beach">
+                    <div class="info">
+                        <span>📍</span>
+                        <div class="text">
+                            <p class="name">Durdle Door Beach</p>
+                            <p class="place">England</p>
+                        </div>
+                        <button class="arrow" aria-label="Details">→</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 card-wrapper north">
+                <div class="beach-card" onclick="openModal('sandwood-bay-modal')">
+                    <img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?auto=format&fit=crop&w=600&q=80" alt="Sandwood Bay">
+                    <div class="info">
+                        <span>📍</span>
+                        <div class="text">
+                            <p class="name">Sandwood Bay</p>
+                            <p class="place">Scotland</p>
+                        </div>
+                        <button class="arrow" aria-label="Details">→</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 card-wrapper north">
+                <div class="beach-card" onclick="openModal('nida-beach-modal')">
+                    <img src="https://images.unsplash.com/photo-1471922694854-ff1b63b20054?auto=format&fit=crop&w=600&q=80" alt="Nida Beach">
+                    <div class="info">
+                        <span>📍</span>
+                        <div class="text">
+                            <p class="name">Nida Beach</p>
+                            <p class="place">Lithuania</p>
+                        </div>
+                        <button class="arrow" aria-label="Details">→</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EAST ZONE CARDS -->
+            <div class="col-lg-4 col-md-6 col-sm-12 card-wrapper east" style="display: none;">
+                <div class="beach-card" onclick="openModal('bondi-beach-modal')">
+                    <img src="https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?auto=format&fit=crop&w=600&q=80" alt="Bondi Beach">
+                    <div class="info">
+                        <span>📍</span>
+                        <div class="text">
+                            <p class="name">Bondi Beach</p>
+                            <p class="place">Australia</p>
+                        </div>
+                        <button class="arrow" aria-label="Details">→</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 card-wrapper east" style="display: none;">
+                <div class="beach-card" onclick="openModal('waikiki-beach-modal')">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" alt="Waikiki Beach">
+                    <div class="info">
+                        <span>📍</span>
+                        <div class="text">
+                            <p class="name">Waikiki Beach</p>
+                            <p class="place">Hawaii, USA</p>
+                        </div>
+                        <button class="arrow" aria-label="Details">→</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 card-wrapper east" style="display: none;">
+                <div class="beach-card" onclick="openModal('maya-bay-modal')">
+                    <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=600&q=80" alt="Maya Bay">
+                    <div class="info">
+                        <span>📍</span>
+                        <div class="text">
+                            <p class="name">Maya Bay</p>
+                            <p class="place">Thailand</p>
+                        </div>
+                        <button class="arrow" aria-label="Details">→</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 card-wrapper east" style="display: none;">
+                <div class="beach-card" onclick="openModal('nha-trang-beach-modal')">
+                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=80" alt="Nha Trang Beach">
+                    <div class="info">
+                        <span>📍</span>
+                        <div class="text">
+                            <p class="name">Nha Trang Beach</p>
+                            <p class="place">Vietnam</p>
+                        </div>
+                        <button class="arrow" aria-label="Details">→</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 card-wrapper east" style="display: none;">
+                <div class="beach-card" onclick="openModal('boracay-beach-modal')">
+                    <img src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&w=600&q=80" alt="Boracay Beach">
+                    <div class="info">
+                        <span>📍</span>
+                        <div class="text">
+                            <p class="name">Boracay Beach</p>
+                            <p class="place">Philippines</p>
+                        </div>
+                        <button class="arrow" aria-label="Details">→</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 card-wrapper east" style="display: none;">
+                <div class="beach-card" onclick="openModal('copacabana-beach-modal')">
+                    <img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?auto=format&fit=crop&w=600&q=80" alt="Copacabana Beach">
+                    <div class="info">
+                        <span>📍</span>
+                        <div class="text">
+                            <p class="name">Copacabana Beach</p>
+                            <p class="place">Brazil</p>
+                        </div>
+                        <button class="arrow" aria-label="Details">→</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WEST ZONE CARDS -->
+            <div class="col-lg-4 col-md-6 col-sm-12 card-wrapper west" style="display: none;">
+                <div class="beach-card" onclick="openModal('santa-monica-beach-modal')">
+                    <img src="https://images.unsplash.com/photo-1515859005217-8a1f08870f59?auto=format&fit=crop&w=600&q=80" alt="Santa Monica Beach">
+                    <div class="info">
+                        <span>📍</span>
+                        <div class="text">
+                            <p class="name">Santa Monica Beach</p>
+                            <p class="place">California, USA</p>
+                        </div>
+                        <button class="arrow" aria-label="Details">→</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 card-wrapper west" style="display: none;">
+                <div class="beach-card" onclick="openModal('venice-beach-modal')">
+                    <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=600&q=80" alt="Venice Beach">
+                    <div class="info">
+                        <span>📍</span>
+                        <div class="text">
+                            <p class="name">Venice Beach</p>
+                            <p class="place">California, USA</p>
+                        </div>
+                        <button class="arrow" aria-label="Details">→</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 card-wrapper west" style="display: none;">
+                <div class="beach-card" onclick="openModal('waikiki-beach-modal')">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" alt="Waikiki Beach">
+                    <div class="info">
+                        <span>📍</span>
+                        <div class="text">
+                            <p class="name">Waikiki Beach</p>
+                            <p class="place">Hawaii, USA</p>
+                        </div>
+                        <button class="arrow" aria-label="Details">→</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 card-wrapper west" style="display: none;">
+                <div class="beach-card" onclick="openModal('kaanapali-beach-modal')">
+                    <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=600&q=80" alt="Kaanapali Beach">
+                    <div class="info">
+                        <span>📍</span>
+                        <div class="text">
+                            <p class="name">Kaanapali Beach</p>
+                            <p class="place">Hawaii, USA</p>
+                        </div>
+                        <button class="arrow" aria-label="Details">→</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 card-wrapper west" style="display: none;">
+                <div class="beach-card" onclick="openModal('manuel-antonio-beach-modal')">
+                    <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=600&q=80" alt="Manuel Antonio Beach">
+                    <div class="info">
+                        <span>📍</span>
+                        <div class="text">
+                            <p class="name">Manuel Antonio Beach</p>
+                            <p class="place">Costa Rica</p>
+                        </div>
+                        <button class="arrow" aria-label="Details">→</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 card-wrapper west" style="display: none;">
+                <div class="beach-card" onclick="openModal('playa-del-carmen-modal')">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" alt="Playa del Carmen">
+                    <div class="info">
+                        <span>📍</span>
+                        <div class="text">
+                            <p class="name">Playa del Carmen</p>
+                            <p class="place">Mexico</p>
+                        </div>
+                        <button class="arrow" aria-label="Details">→</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SOUTH ZONE CARDS -->
+            <div class="col-lg-4 col-md-6 col-sm-12 card-wrapper south" style="display: none;">
+                <div class="beach-card" onclick="openModal('whitehaven-beach-modal')">
+                    <img src="https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?auto=format&fit=crop&w=600&q=80" alt="Whitehaven Beach">
+                    <div class="info">
+                        <span>📍</span>
+                        <div class="text">
+                            <p class="name">Whitehaven Beach</p>
+                            <p class="place">Australia</p>
+                        </div>
+                        <button class="arrow" aria-label="Details">→</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 card-wrapper south" style="display: none;">
+                <div class="beach-card" onclick="openModal('anse-source-d-argent-modal')">
+                    <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=600&q=80" alt="Anse Source d'Argent">
+                    <div class="info">
+                        <span>📍</span>
+                        <div class="text">
+                            <p class="name">Anse Source d'Argent</p>
+                            <p class="place">Seychelles</p>
+                        </div>
+                        <button class="arrow" aria-label="Details">→</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 card-wrapper south" style="display: none;">
+                <div class="beach-card" onclick="openModal('clifton-beach-modal')">
+                    <img src="https://images.unsplash.com/photo-1509233725247-49e657c54213?auto=format&fit=crop&w=600&q=80" alt="Clifton Beach">
+                    <div class="info">
+                        <span>📍</span>
+                        <div class="text">
+                            <p class="name">Clifton Beach</p>
+                            <p class="place">South Africa</p>
+                        </div>
+                        <button class="arrow" aria-label="Details">→</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 card-wrapper south" style="display: none;">
+                <div class="beach-card" onclick="openModal('camps-bay-beach-modal')">
+                    <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=600&q=80" alt="Camps Bay Beach">
+                    <div class="info">
+                        <span>📍</span>
+                        <div class="text">
+                            <p class="name">Camps Bay Beach</p>
+                            <p class="place">South Africa</p>
+                        </div>
+                        <button class="arrow" aria-label="Details">→</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 card-wrapper south" style="display: none;">
+                <div class="beach-card" onclick="openModal('praia-do-cassino-modal')">
+                    <img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?auto=format&fit=crop&w=600&q=80" alt="Praia do Cassino">
+                    <div class="info">
+                        <span>📍</span>
+                        <div class="text">
+                            <p class="name">Praia do Cassino</p>
+                            <p class="place">Brazil</p>
+                        </div>
+                        <button class="arrow" aria-label="Details">→</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 card-wrapper south" style="display: none;">
+                <div class="beach-card" onclick="openModal('ninety-mile-beach-modal')">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" alt="Ninety Mile Beach">
+                    <div class="info">
+                        <span>📍</span>
+                        <div class="text">
+                            <p class="name">Ninety Mile Beach</p>
+                            <p class="place">New Zealand</p>
+                        </div>
+                        <button class="arrow" aria-label="Details">→</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Reynisfjara Beach Modal -->
+    <div class="overlay" id="reynisfjara-beach-modal">
+        <div class="modal-box">
+            <div class="left">
+                <div class="photo" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80')">
+                    <span class="tag">📍 Iceland</span>
+                </div>
+                <h2>Reynisfjara Beach</h2>
+                <p class="loc">📍 Vik, Iceland</p>
+                <p class="desc">A dramatic black sand beach with basalt columns and powerful Atlantic waves.</p>
+                <div class="stats">
+                    <div>Best Time<b>Jun - Aug</b></div>
+                    <div>Avg. Temp<b>5°C - 13°C</b></div>
+                    <div>Beach Type<b>Black Sand</b></div>
+                    <div>Clarity<b>Good</b></div>
+                </div>
+            </div>
+            <div class="right">
+                <button class="close-btn" onclick="closeModal('reynisfjara-beach-modal')">×</button>
+                <div>
+                    <h3>Highlights</h3>
+                    <ul>
+                        <li>Black sand and basalt columns</li>
+                        <li>Sea stack views</li>
+                        <li>Northern Lights chance</li>
+                        <li>Photography spot</li>
+                    </ul>
+                    <h3>Quick Info</h3>
+                    <div class="modal-info"><b>Location</b>Vik, Iceland</div>
+                    <div class="modal-info"><b>Best Time</b>Jun - Aug</div>
+                    <div class="modal-info"><b>Travel Cost</b>$1500 - $2800</div>
+                </div>
+                <div class="plan-row">
+                    <a href="#routes-section" class="plan-btn" onclick="closeModal('reynisfjara-beach-modal')">Plan Your Trip →</a>
+                    <button type="button" class="download-btn" data-download-plan aria-label="Download trip plan (Word)" title="Download trip plan (Word)"><i class="fa-solid fa-download"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lofoten Beach Modal -->
+    <div class="overlay" id="lofoten-beach-modal">
+        <div class="modal-box">
+            <div class="left">
+                <div class="photo" style="background-image: url('https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&fit=crop&w=600&q=80')">
+                    <span class="tag">📍 Norway</span>
+                </div>
+                <h2>Lofoten Beach</h2>
+                <p class="loc">📍 Lofoten Islands, Norway</p>
+                <p class="desc">Arctic beaches with bright turquoise water, steep peaks and midnight sun.</p>
+                <div class="stats">
+                    <div>Best Time<b>Jun - Aug</b></div>
+                    <div>Avg. Temp<b>8°C - 16°C</b></div>
+                    <div>Beach Type<b>White Sand</b></div>
+                    <div>Clarity<b>Excellent</b></div>
+                </div>
+            </div>
+            <div class="right">
+                <button class="close-btn" onclick="closeModal('lofoten-beach-modal')">×</button>
+                <div>
+                    <h3>Highlights</h3>
+                    <ul>
+                        <li>Midnight sun and aurora</li>
+                        <li>Mountain backdrops</li>
+                        <li>Hiking and kayaking</li>
+                        <li>Peaceful scenery</li>
+                    </ul>
+                    <h3>Quick Info</h3>
+                    <div class="modal-info"><b>Location</b>Lofoten Islands, Norway</div>
+                    <div class="modal-info"><b>Best Time</b>Jun - Aug</div>
+                    <div class="modal-info"><b>Travel Cost</b>$1400 - $2600</div>
+                </div>
+                <div class="plan-row">
+                    <a href="#routes-section" class="plan-btn" onclick="closeModal('lofoten-beach-modal')">Plan Your Trip →</a>
+                    <button type="button" class="download-btn" data-download-plan aria-label="Download trip plan (Word)" title="Download trip plan (Word)"><i class="fa-solid fa-download"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skagen Beach Modal -->
+    <div class="overlay" id="skagen-beach-modal">
+        <div class="modal-box">
+            <div class="left">
+                <div class="photo" style="background-image: url('https://images.unsplash.com/photo-1509233725247-49e657c54213?auto=format&fit=crop&w=600&q=80')">
+                    <span class="tag">📍 Denmark</span>
+                </div>
+                <h2>Skagen Beach</h2>
+                <p class="loc">📍 Skagen, Denmark</p>
+                <p class="desc">Where two seas meet at Denmark's northern tip, with soft dunes and bright light.</p>
+                <div class="stats">
+                    <div>Best Time<b>Jun - Aug</b></div>
+                    <div>Avg. Temp<b>12°C - 21°C</b></div>
+                    <div>Beach Type<b>Light Sand</b></div>
+                    <div>Clarity<b>Good</b></div>
+                </div>
+            </div>
+            <div class="right">
+                <button class="close-btn" onclick="closeModal('skagen-beach-modal')">×</button>
+                <div>
+                    <h3>Highlights</h3>
+                    <ul>
+                        <li>Grenen sandbar</li>
+                        <li>Two seas meeting</li>
+                        <li>Fresh fish restaurants</li>
+                        <li>Dune walks</li>
+                    </ul>
+                    <h3>Quick Info</h3>
+                    <div class="modal-info"><b>Location</b>Skagen, Denmark</div>
+                    <div class="modal-info"><b>Best Time</b>Jun - Aug</div>
+                    <div class="modal-info"><b>Travel Cost</b>$900 - $1800</div>
+                </div>
+                <div class="plan-row">
+                    <a href="#routes-section" class="plan-btn" onclick="closeModal('skagen-beach-modal')">Plan Your Trip →</a>
+                    <button type="button" class="download-btn" data-download-plan aria-label="Download trip plan (Word)" title="Download trip plan (Word)"><i class="fa-solid fa-download"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Durdle Door Beach Modal -->
+    <div class="overlay" id="durdle-door-beach-modal">
+        <div class="modal-box">
+            <div class="left">
+                <div class="photo" style="background-image: url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=600&q=80')">
+                    <span class="tag">📍 England</span>
+                </div>
+                <h2>Durdle Door Beach</h2>
+                <p class="loc">📍 Dorset, England</p>
+                <p class="desc">A pebble beach beside a natural limestone arch on the Jurassic Coast.</p>
+                <div class="stats">
+                    <div>Best Time<b>Jun - Sep</b></div>
+                    <div>Avg. Temp<b>12°C - 21°C</b></div>
+                    <div>Beach Type<b>Pebble</b></div>
+                    <div>Clarity<b>Excellent</b></div>
+                </div>
+            </div>
+            <div class="right">
+                <button class="close-btn" onclick="closeModal('durdle-door-beach-modal')">×</button>
+                <div>
+                    <h3>Highlights</h3>
+                    <ul>
+                        <li>Natural limestone arch</li>
+                        <li>Jurassic Coast views</li>
+                        <li>Coastal hiking</li>
+                        <li>Cold-water swimming</li>
+                    </ul>
+                    <h3>Quick Info</h3>
+                    <div class="modal-info"><b>Location</b>Dorset, England</div>
+                    <div class="modal-info"><b>Best Time</b>Jun - Sep</div>
+                    <div class="modal-info"><b>Travel Cost</b>$700 - $1500</div>
+                </div>
+                <div class="plan-row">
+                    <a href="#routes-section" class="plan-btn" onclick="closeModal('durdle-door-beach-modal')">Plan Your Trip →</a>
+                    <button type="button" class="download-btn" data-download-plan aria-label="Download trip plan (Word)" title="Download trip plan (Word)"><i class="fa-solid fa-download"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sandwood Bay Modal -->
+    <div class="overlay" id="sandwood-bay-modal">
+        <div class="modal-box">
+            <div class="left">
+                <div class="photo" style="background-image: url('https://images.unsplash.com/photo-1506929562872-bb421503ef21?auto=format&fit=crop&w=600&q=80')">
+                    <span class="tag">📍 Scotland</span>
+                </div>
+                <h2>Sandwood Bay</h2>
+                <p class="loc">📍 Sutherland, Scotland</p>
+                <p class="desc">A remote, wild beach with pink-tinged sand and tall sea stacks, reached on foot.</p>
+                <div class="stats">
+                    <div>Best Time<b>May - Sep</b></div>
+                    <div>Avg. Temp<b>8°C - 17°C</b></div>
+                    <div>Beach Type<b>Pink Sand</b></div>
+                    <div>Clarity<b>Good</b></div>
+                </div>
+            </div>
+            <div class="right">
+                <button class="close-btn" onclick="closeModal('sandwood-bay-modal')">×</button>
+                <div>
+                    <h3>Highlights</h3>
+                    <ul>
+                        <li>Remote and quiet</li>
+                        <li>Sea stack views</li>
+                        <li>Long coastal hike</li>
+                        <li>Wild camping spots</li>
+                    </ul>
+                    <h3>Quick Info</h3>
+                    <div class="modal-info"><b>Location</b>Sutherland, Scotland</div>
+                    <div class="modal-info"><b>Best Time</b>May - Sep</div>
+                    <div class="modal-info"><b>Travel Cost</b>$600 - $1300</div>
+                </div>
+                <div class="plan-row">
+                    <a href="#routes-section" class="plan-btn" onclick="closeModal('sandwood-bay-modal')">Plan Your Trip →</a>
+                    <button type="button" class="download-btn" data-download-plan aria-label="Download trip plan (Word)" title="Download trip plan (Word)"><i class="fa-solid fa-download"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nida Beach Modal -->
+    <div class="overlay" id="nida-beach-modal">
+        <div class="modal-box">
+            <div class="left">
+                <div class="photo" style="background-image: url('https://images.unsplash.com/photo-1471922694854-ff1b63b20054?auto=format&fit=crop&w=600&q=80')">
+                    <span class="tag">📍 Lithuania</span>
+                </div>
+                <h2>Nida Beach</h2>
+                <p class="loc">📍 Curonian Spit, Lithuania</p>
+                <p class="desc">A calm Baltic beach with huge dunes, pine forests and cozy fishing villages.</p>
+                <div class="stats">
+                    <div>Best Time<b>Jun - Aug</b></div>
+                    <div>Avg. Temp<b>14°C - 23°C</b></div>
+                    <div>Beach Type<b>Fine Sand</b></div>
+                    <div>Clarity<b>Good</b></div>
+                </div>
+            </div>
+            <div class="right">
+                <button class="close-btn" onclick="closeModal('nida-beach-modal')">×</button>
+                <div>
+                    <h3>Highlights</h3>
+                    <ul>
+                        <li>Giant sand dunes</li>
+                        <li>Pine forest walks</li>
+                        <li>Amber shops</li>
+                        <li>Fresh smoked fish</li>
+                    </ul>
+                    <h3>Quick Info</h3>
+                    <div class="modal-info"><b>Location</b>Curonian Spit, Lithuania</div>
+                    <div class="modal-info"><b>Best Time</b>Jun - Aug</div>
+                    <div class="modal-info"><b>Travel Cost</b>$500 - $1100</div>
+                </div>
+                <div class="plan-row">
+                    <a href="#routes-section" class="plan-btn" onclick="closeModal('nida-beach-modal')">Plan Your Trip →</a>
+                    <button type="button" class="download-btn" data-download-plan aria-label="Download trip plan (Word)" title="Download trip plan (Word)"><i class="fa-solid fa-download"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bondi Beach Modal -->
+    <div class="overlay" id="bondi-beach-modal">
+        <div class="modal-box">
+            <div class="left">
+                <div class="photo" style="background-image: url('https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?auto=format&fit=crop&w=600&q=80')">
+                    <span class="tag">📍 Australia</span>
+                </div>
+                <h2>Bondi Beach</h2>
+                <p class="loc">📍 Sydney, Australia</p>
+                <p class="desc">Famous surf beach with golden sand and a lively coastal vibe, just minutes from the city.</p>
+                <div class="stats">
+                    <div>Best Time<b>Nov - Mar</b></div>
+                    <div>Avg. Temp<b>22°C - 28°C</b></div>
+                    <div>Beach Type<b>Golden Sand</b></div>
+                    <div>Clarity<b>Good</b></div>
+                </div>
+            </div>
+            <div class="right">
+                <button class="close-btn" onclick="closeModal('bondi-beach-modal')">×</button>
+                <div>
+                    <h3>Highlights</h3>
+                    <ul>
+                        <li>Surfing and ocean pool</li>
+                        <li>Coastal cliff walk</li>
+                        <li>Cafes and nightlife</li>
+                        <li>Beginner surf lessons</li>
+                    </ul>
+                    <h3>Quick Info</h3>
+                    <div class="modal-info"><b>Location</b>Sydney, Australia</div>
+                    <div class="modal-info"><b>Best Time</b>Nov - Mar</div>
+                    <div class="modal-info"><b>Travel Cost</b>$900 - $1800</div>
+                </div>
+                <div class="plan-row">
+                    <a href="#routes-section" class="plan-btn" onclick="closeModal('bondi-beach-modal')">Plan Your Trip →</a>
+                    <button type="button" class="download-btn" data-download-plan aria-label="Download trip plan (Word)" title="Download trip plan (Word)"><i class="fa-solid fa-download"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Waikiki Beach Modal -->
+    <div class="overlay" id="waikiki-beach-modal">
+        <div class="modal-box">
+            <div class="left">
+                <div class="photo" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80')">
+                    <span class="tag">📍 USA</span>
+                </div>
+                <h2>Waikiki Beach</h2>
+                <p class="loc">📍 Honolulu, Hawaii, USA</p>
+                <p class="desc">Iconic Hawaiian beach with gentle waves, Diamond Head views and a buzzing resort strip.</p>
+                <div class="stats">
+                    <div>Best Time<b>Apr - Oct</b></div>
+                    <div>Avg. Temp<b>24°C - 30°C</b></div>
+                    <div>Beach Type<b>Golden Sand</b></div>
+                    <div>Clarity<b>Good</b></div>
+                </div>
+            </div>
+            <div class="right">
+                <button class="close-btn" onclick="closeModal('waikiki-beach-modal')">×</button>
+                <div>
+                    <h3>Highlights</h3>
+                    <ul>
+                        <li>Beginner-friendly surfing</li>
+                        <li>Diamond Head views</li>
+                        <li>Shopping and dining</li>
+                        <li>Beautiful sunsets</li>
+                    </ul>
+                    <h3>Quick Info</h3>
+                    <div class="modal-info"><b>Location</b>Honolulu, Hawaii, USA</div>
+                    <div class="modal-info"><b>Best Time</b>Apr - Oct</div>
+                    <div class="modal-info"><b>Travel Cost</b>$1200 - $2500</div>
+                </div>
+                <div class="plan-row">
+                    <a href="#routes-section" class="plan-btn" onclick="closeModal('waikiki-beach-modal')">Plan Your Trip →</a>
+                    <button type="button" class="download-btn" data-download-plan aria-label="Download trip plan (Word)" title="Download trip plan (Word)"><i class="fa-solid fa-download"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Maya Bay Modal -->
+    <div class="overlay" id="maya-bay-modal">
+        <div class="modal-box">
+            <div class="left">
+                <div class="photo" style="background-image: url('https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=600&q=80')">
+                    <span class="tag">📍 Thailand</span>
+                </div>
+                <h2>Maya Bay</h2>
+                <p class="loc">📍 Phi Phi Islands, Thailand</p>
+                <p class="desc">A turquoise lagoon wrapped by limestone cliffs, made famous by movies.</p>
+                <div class="stats">
+                    <div>Best Time<b>Nov - Apr</b></div>
+                    <div>Avg. Temp<b>27°C - 32°C</b></div>
+                    <div>Beach Type<b>White Sand</b></div>
+                    <div>Clarity<b>Excellent</b></div>
+                </div>
+            </div>
+            <div class="right">
+                <button class="close-btn" onclick="closeModal('maya-bay-modal')">×</button>
+                <div>
+                    <h3>Highlights</h3>
+                    <ul>
+                        <li>Snorkeling in the lagoon</li>
+                        <li>Limestone cliff views</li>
+                        <li>Island boat tours</li>
+                        <li>Marine life spotting</li>
+                    </ul>
+                    <h3>Quick Info</h3>
+                    <div class="modal-info"><b>Location</b>Phi Phi Islands, Thailand</div>
+                    <div class="modal-info"><b>Best Time</b>Nov - Apr</div>
+                    <div class="modal-info"><b>Travel Cost</b>$600 - $1200</div>
+                </div>
+                <div class="plan-row">
+                    <a href="#routes-section" class="plan-btn" onclick="closeModal('maya-bay-modal')">Plan Your Trip →</a>
+                    <button type="button" class="download-btn" data-download-plan aria-label="Download trip plan (Word)" title="Download trip plan (Word)"><i class="fa-solid fa-download"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nha Trang Beach Modal -->
+    <div class="overlay" id="nha-trang-beach-modal">
+        <div class="modal-box">
+            <div class="left">
+                <div class="photo" style="background-image: url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=80')">
+                    <span class="tag">📍 Vietnam</span>
+                </div>
+                <h2>Nha Trang Beach</h2>
+                <p class="loc">📍 Nha Trang, Vietnam</p>
+                <p class="desc">A long city beach with warm water, fresh seafood and island-hopping trips.</p>
+                <div class="stats">
+                    <div>Best Time<b>Jan - Aug</b></div>
+                    <div>Avg. Temp<b>25°C - 32°C</b></div>
+                    <div>Beach Type<b>Golden Sand</b></div>
+                    <div>Clarity<b>Good</b></div>
+                </div>
+            </div>
+            <div class="right">
+                <button class="close-btn" onclick="closeModal('nha-trang-beach-modal')">×</button>
+                <div>
+                    <h3>Highlights</h3>
+                    <ul>
+                        <li>Island hopping</li>
+                        <li>Scuba diving</li>
+                        <li>Fresh seafood</li>
+                        <li>Mud baths and spas</li>
+                    </ul>
+                    <h3>Quick Info</h3>
+                    <div class="modal-info"><b>Location</b>Nha Trang, Vietnam</div>
+                    <div class="modal-info"><b>Best Time</b>Jan - Aug</div>
+                    <div class="modal-info"><b>Travel Cost</b>$500 - $1000</div>
+                </div>
+                <div class="plan-row">
+                    <a href="#routes-section" class="plan-btn" onclick="closeModal('nha-trang-beach-modal')">Plan Your Trip →</a>
+                    <button type="button" class="download-btn" data-download-plan aria-label="Download trip plan (Word)" title="Download trip plan (Word)"><i class="fa-solid fa-download"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Boracay Beach Modal -->
+    <div class="overlay" id="boracay-beach-modal">
+        <div class="modal-box">
+            <div class="left">
+                <div class="photo" style="background-image: url('https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&w=600&q=80')">
+                    <span class="tag">📍 Philippines</span>
+                </div>
+                <h2>Boracay Beach</h2>
+                <p class="loc">📍 Boracay Island, Philippines</p>
+                <p class="desc">White Beach is famous for powdery sand, calm water and lively sunset parties.</p>
+                <div class="stats">
+                    <div>Best Time<b>Nov - May</b></div>
+                    <div>Avg. Temp<b>26°C - 32°C</b></div>
+                    <div>Beach Type<b>White Sand</b></div>
+                    <div>Clarity<b>Excellent</b></div>
+                </div>
+            </div>
+            <div class="right">
+                <button class="close-btn" onclick="closeModal('boracay-beach-modal')">×</button>
+                <div>
+                    <h3>Highlights</h3>
+                    <ul>
+                        <li>Powdery white sand</li>
+                        <li>Kitesurfing and sailing</li>
+                        <li>Sunset sailing</li>
+                        <li>Beach parties</li>
+                    </ul>
+                    <h3>Quick Info</h3>
+                    <div class="modal-info"><b>Location</b>Boracay Island, Philippines</div>
+                    <div class="modal-info"><b>Best Time</b>Nov - May</div>
+                    <div class="modal-info"><b>Travel Cost</b>$700 - $1400</div>
+                </div>
+                <div class="plan-row">
+                    <a href="#routes-section" class="plan-btn" onclick="closeModal('boracay-beach-modal')">Plan Your Trip →</a>
+                    <button type="button" class="download-btn" data-download-plan aria-label="Download trip plan (Word)" title="Download trip plan (Word)"><i class="fa-solid fa-download"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Copacabana Beach Modal -->
+    <div class="overlay" id="copacabana-beach-modal">
+        <div class="modal-box">
+            <div class="left">
+                <div class="photo" style="background-image: url('https://images.unsplash.com/photo-1483729558449-99ef09a8c325?auto=format&fit=crop&w=600&q=80')">
+                    <span class="tag">📍 Brazil</span>
+                </div>
+                <h2>Copacabana Beach</h2>
+                <p class="loc">📍 Rio de Janeiro, Brazil</p>
+                <p class="desc">A famous 4 km beach full of music, beach sports and Sugarloaf Mountain views.</p>
+                <div class="stats">
+                    <div>Best Time<b>Dec - Mar</b></div>
+                    <div>Avg. Temp<b>23°C - 30°C</b></div>
+                    <div>Beach Type<b>Golden Sand</b></div>
+                    <div>Clarity<b>Moderate</b></div>
+                </div>
+            </div>
+            <div class="right">
+                <button class="close-btn" onclick="closeModal('copacabana-beach-modal')">×</button>
+                <div>
+                    <h3>Highlights</h3>
+                    <ul>
+                        <li>Beach volleyball and football</li>
+                        <li>Sugarloaf Mountain views</li>
+                        <li>Street food and music</li>
+                        <li>Lively atmosphere</li>
+                    </ul>
+                    <h3>Quick Info</h3>
+                    <div class="modal-info"><b>Location</b>Rio de Janeiro, Brazil</div>
+                    <div class="modal-info"><b>Best Time</b>Dec - Mar</div>
+                    <div class="modal-info"><b>Travel Cost</b>$1000 - $2000</div>
+                </div>
+                <div class="plan-row">
+                    <a href="#routes-section" class="plan-btn" onclick="closeModal('copacabana-beach-modal')">Plan Your Trip →</a>
+                    <button type="button" class="download-btn" data-download-plan aria-label="Download trip plan (Word)" title="Download trip plan (Word)"><i class="fa-solid fa-download"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Santa Monica Beach Modal -->
+    <div class="overlay" id="santa-monica-beach-modal">
+        <div class="modal-box">
+            <div class="left">
+                <div class="photo" style="background-image: url('https://images.unsplash.com/photo-1515859005217-8a1f08870f59?auto=format&fit=crop&w=600&q=80')">
+                    <span class="tag">📍 USA</span>
+                </div>
+                <h2>Santa Monica Beach</h2>
+                <p class="loc">📍 California, USA</p>
+                <p class="desc">A classic California beach with a historic pier, bike paths and golden sunsets.</p>
+                <div class="stats">
+                    <div>Best Time<b>Jun - Sep</b></div>
+                    <div>Avg. Temp<b>18°C - 26°C</b></div>
+                    <div>Beach Type<b>Golden Sand</b></div>
+                    <div>Clarity<b>Moderate</b></div>
+                </div>
+            </div>
+            <div class="right">
+                <button class="close-btn" onclick="closeModal('santa-monica-beach-modal')">×</button>
+                <div>
+                    <h3>Highlights</h3>
+                    <ul>
+                        <li>Santa Monica Pier</li>
+                        <li>Cycling and skating</li>
+                        <li>Sunset views</li>
+                        <li>Beachfront dining</li>
+                    </ul>
+                    <h3>Quick Info</h3>
+                    <div class="modal-info"><b>Location</b>California, USA</div>
+                    <div class="modal-info"><b>Best Time</b>Jun - Sep</div>
+                    <div class="modal-info"><b>Travel Cost</b>$1000 - $2200</div>
+                </div>
+                <div class="plan-row">
+                    <a href="#routes-section" class="plan-btn" onclick="closeModal('santa-monica-beach-modal')">Plan Your Trip →</a>
+                    <button type="button" class="download-btn" data-download-plan aria-label="Download trip plan (Word)" title="Download trip plan (Word)"><i class="fa-solid fa-download"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Venice Beach Modal -->
+    <div class="overlay" id="venice-beach-modal">
+        <div class="modal-box">
+            <div class="left">
+                <div class="photo" style="background-image: url('https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=600&q=80')">
+                    <span class="tag">📍 USA</span>
+                </div>
+                <h2>Venice Beach</h2>
+                <p class="loc">📍 Los Angeles, California, USA</p>
+                <p class="desc">A creative beachfront known for its boardwalk, street artists and skate park.</p>
+                <div class="stats">
+                    <div>Best Time<b>May - Sep</b></div>
+                    <div>Avg. Temp<b>18°C - 26°C</b></div>
+                    <div>Beach Type<b>Golden Sand</b></div>
+                    <div>Clarity<b>Moderate</b></div>
+                </div>
+            </div>
+            <div class="right">
+                <button class="close-btn" onclick="closeModal('venice-beach-modal')">×</button>
+                <div>
+                    <h3>Highlights</h3>
+                    <ul>
+                        <li>Boardwalk street shows</li>
+                        <li>Muscle Beach gym</li>
+                        <li>Skate park</li>
+                        <li>Murals and art</li>
+                    </ul>
+                    <h3>Quick Info</h3>
+                    <div class="modal-info"><b>Location</b>Los Angeles, USA</div>
+                    <div class="modal-info"><b>Best Time</b>May - Sep</div>
+                    <div class="modal-info"><b>Travel Cost</b>$1000 - $2200</div>
+                </div>
+                <div class="plan-row">
+                    <a href="#routes-section" class="plan-btn" onclick="closeModal('venice-beach-modal')">Plan Your Trip →</a>
+                    <button type="button" class="download-btn" data-download-plan aria-label="Download trip plan (Word)" title="Download trip plan (Word)"><i class="fa-solid fa-download"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kaanapali Beach Modal -->
+    <div class="overlay" id="kaanapali-beach-modal">
+        <div class="modal-box">
+            <div class="left">
+                <div class="photo" style="background-image: url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=600&q=80')">
+                    <span class="tag">📍 USA</span>
+                </div>
+                <h2>Kaanapali Beach</h2>
+                <p class="loc">📍 Maui, Hawaii, USA</p>
+                <p class="desc">A long Maui beach with calm waters, resorts and famous Black Rock cliff diving.</p>
+                <div class="stats">
+                    <div>Best Time<b>Apr - Oct</b></div>
+                    <div>Avg. Temp<b>24°C - 29°C</b></div>
+                    <div>Beach Type<b>Golden Sand</b></div>
+                    <div>Clarity<b>Excellent</b></div>
+                </div>
+            </div>
+            <div class="right">
+                <button class="close-btn" onclick="closeModal('kaanapali-beach-modal')">×</button>
+                <div>
+                    <h3>Highlights</h3>
+                    <ul>
+                        <li>Snorkeling at Black Rock</li>
+                        <li>Whale watching in season</li>
+                        <li>Luxury beach resorts</li>
+                        <li>Great sunsets</li>
+                    </ul>
+                    <h3>Quick Info</h3>
+                    <div class="modal-info"><b>Location</b>Maui, Hawaii, USA</div>
+                    <div class="modal-info"><b>Best Time</b>Apr - Oct</div>
+                    <div class="modal-info"><b>Travel Cost</b>$1500 - $3000</div>
+                </div>
+               <div class="plan-row">
+                   <a href="#routes-section" class="plan-btn" onclick="closeModal('kaanapali-beach-modal')">Plan Your Trip →</a>
+                   <button type="button" class="download-btn" data-download-plan aria-label="Download trip plan (Word)" title="Download trip plan (Word)"><i class="fa-solid fa-download"></i></button>
+               </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Manuel Antonio Beach Modal -->
+    <div class="overlay" id="manuel-antonio-beach-modal">
+        <div class="modal-box">
+            <div class="left">
+                <div class="photo" style="background-image: url('https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=600&q=80')">
+                    <span class="tag">📍 Costa Rica</span>
+                </div>
+                <h2>Manuel Antonio Beach</h2>
+                <p class="loc">📍 Manuel Antonio, Costa Rica</p>
+                <p class="desc">A jungle-backed beach where monkeys and sloths live right next to the sand.</p>
+                <div class="stats">
+                    <div>Best Time<b>Dec - Apr</b></div>
+                    <div>Avg. Temp<b>24°C - 31°C</b></div>
+                    <div>Beach Type<b>Light Sand</b></div>
+                    <div>Clarity<b>Good</b></div>
+                </div>
+            </div>
+            <div class="right">
+                <button class="close-btn" onclick="closeModal('manuel-antonio-beach-modal')">×</button>
+                <div>
+                    <h3>Highlights</h3>
+                    <ul>
+                        <li>Wildlife and rainforest trails</li>
+                        <li>Calm swimming bays</li>
+                        <li>National park access</li>
+                        <li>Kayaking</li>
+                    </ul>
+                    <h3>Quick Info</h3>
+                    <div class="modal-info"><b>Location</b>Manuel Antonio, Costa Rica</div>
+                    <div class="modal-info"><b>Best Time</b>Dec - Apr</div>
+                    <div class="modal-info"><b>Travel Cost</b>$800 - $1600</div>
+                </div>
+                <div class="plan-row">
+                    <a href="#routes-section" class="plan-btn" onclick="closeModal('manuel-antonio-beach-modal')">Plan Your Trip →</a>
+                    <button type="button" class="download-btn" data-download-plan aria-label="Download trip plan (Word)" title="Download trip plan (Word)"><i class="fa-solid fa-download"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Playa del Carmen Modal -->
+    <div class="overlay" id="playa-del-carmen-modal">
+        <div class="modal-box">
+            <div class="left">
+                <div class="photo" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80')">
+                    <span class="tag">📍 Mexico</span>
+                </div>
+                <h2>Playa del Carmen</h2>
+                <p class="loc">📍 Quintana Roo, Mexico</p>
+                <p class="desc">A lively Caribbean beach town with turquoise water and easy trips to cenotes.</p>
+                <div class="stats">
+                    <div>Best Time<b>Nov - Apr</b></div>
+                    <div>Avg. Temp<b>25°C - 32°C</b></div>
+                    <div>Beach Type<b>White Sand</b></div>
+                    <div>Clarity<b>Excellent</b></div>
+                </div>
+            </div>
+            <div class="right">
+                <button class="close-btn" onclick="closeModal('playa-del-carmen-modal')">×</button>
+                <div>
+                    <h3>Highlights</h3>
+                    <ul>
+                        <li>Cenote swimming</li>
+                        <li>Diving and snorkeling</li>
+                        <li>5th Avenue shopping</li>
+                        <li>Nightlife</li>
+                    </ul>
+                    <h3>Quick Info</h3>
+                    <div class="modal-info"><b>Location</b>Quintana Roo, Mexico</div>
+                    <div class="modal-info"><b>Best Time</b>Nov - Apr</div>
+                    <div class="modal-info"><b>Travel Cost</b>$700 - $1500</div>
+                </div>
+                <div class="plan-row">
+                    <a href="#routes-section" class="plan-btn" onclick="closeModal('playa-del-carmen-modal')">Plan Your Trip →</a>
+                    <button type="button" class="download-btn" data-download-plan aria-label="Download trip plan (Word)" title="Download trip plan (Word)"><i class="fa-solid fa-download"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Whitehaven Beach Modal -->
+    <div class="overlay" id="whitehaven-beach-modal">
+        <div class="modal-box">
+            <div class="left">
+                <div class="photo" style="background-image: url('https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?auto=format&fit=crop&w=600&q=80')">
+                    <span class="tag">📍 Australia</span>
+                </div>
+                <h2>Whitehaven Beach</h2>
+                <p class="loc">📍 Whitsunday Island, Australia</p>
+                <p class="desc">Seven kilometres of pure white silica sand beside swirling blue water.</p>
+                <div class="stats">
+                    <div>Best Time<b>Sep - Nov</b></div>
+                    <div>Avg. Temp<b>22°C - 29°C</b></div>
+                    <div>Beach Type<b>White Sand</b></div>
+                    <div>Clarity<b>Excellent</b></div>
+                </div>
+            </div>
+            <div class="right">
+                <button class="close-btn" onclick="closeModal('whitehaven-beach-modal')">×</button>
+                <div>
+                    <h3>Highlights</h3>
+                    <ul>
+                        <li>Hill Inlet lookout</li>
+                        <li>Sailing the Whitsundays</li>
+                        <li>Snorkeling nearby</li>
+                        <li>Seaplane tours</li>
+                    </ul>
+                    <h3>Quick Info</h3>
+                    <div class="modal-info"><b>Location</b>Whitsunday Island, Australia</div>
+                    <div class="modal-info"><b>Best Time</b>Sep - Nov</div>
+                    <div class="modal-info"><b>Travel Cost</b>$1500 - $3000</div>
+                </div>
+                <div class="plan-row">
+                    <a href="#routes-section" class="plan-btn" onclick="closeModal('whitehaven-beach-modal')">Plan Your Trip →</a>
+                    <button type="button" class="download-btn" data-download-plan aria-label="Download trip plan (Word)" title="Download trip plan (Word)"><i class="fa-solid fa-download"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Anse Source d'Argent Modal -->
+    <div class="overlay" id="anse-source-d-argent-modal">
+        <div class="modal-box">
+            <div class="left">
+                <div class="photo" style="background-image: url('https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=600&q=80')">
+                    <span class="tag">📍 Seychelles</span>
+                </div>
+                <h2>Anse Source d'Argent</h2>
+                <p class="loc">📍 La Digue, Seychelles</p>
+                <p class="desc">Granite boulders, shallow clear water and palm trees make this a dream photo spot.</p>
+                <div class="stats">
+                    <div>Best Time<b>Apr - Nov</b></div>
+                    <div>Avg. Temp<b>26°C - 31°C</b></div>
+                    <div>Beach Type<b>White Sand</b></div>
+                    <div>Clarity<b>Excellent</b></div>
+                </div>
+            </div>
+            <div class="right">
+                <button class="close-btn" onclick="closeModal('anse-source-d-argent-modal')">×</button>
+                <div>
+                    <h3>Highlights</h3>
+                    <ul>
+                        <li>Giant granite boulders</li>
+                        <li>Shallow lagoon</li>
+                        <li>Snorkeling</li>
+                        <li>Bike rides on La Digue</li>
+                    </ul>
+                    <h3>Quick Info</h3>
+                    <div class="modal-info"><b>Location</b>La Digue, Seychelles</div>
+                    <div class="modal-info"><b>Best Time</b>Apr - Nov</div>
+                    <div class="modal-info"><b>Travel Cost</b>$1800 - $3500</div>
+                </div>
+                <div class="plan-row">
+                    <a href="#routes-section" class="plan-btn" onclick="closeModal('anse-source-d-argent-modal')">Plan Your Trip →</a>
+                    <button type="button" class="download-btn" data-download-plan aria-label="Download trip plan (Word)" title="Download trip plan (Word)"><i class="fa-solid fa-download"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Clifton Beach Modal -->
+    <div class="overlay" id="clifton-beach-modal">
+        <div class="modal-box">
+            <div class="left">
+                <div class="photo" style="background-image: url('https://images.unsplash.com/photo-1509233725247-49e657c54213?auto=format&fit=crop&w=600&q=80')">
+                    <span class="tag">📍 South Africa</span>
+                </div>
+                <h2>Clifton Beach</h2>
+                <p class="loc">📍 Cape Town, South Africa</p>
+                <p class="desc">Four sheltered beaches below Lion's Head, popular with sunbathers and locals.</p>
+                <div class="stats">
+                    <div>Best Time<b>Dec - Mar</b></div>
+                    <div>Avg. Temp<b>18°C - 27°C</b></div>
+                    <div>Beach Type<b>White Sand</b></div>
+                    <div>Clarity<b>Good</b></div>
+                </div>
+            </div>
+            <div class="right">
+                <button class="close-btn" onclick="closeModal('clifton-beach-modal')">×</button>
+                <div>
+                    <h3>Highlights</h3>
+                    <ul>
+                        <li>Wind-sheltered beaches</li>
+                        <li>Sunset views</li>
+                        <li>Beach volleyball</li>
+                        <li>Close to the city</li>
+                    </ul>
+                    <h3>Quick Info</h3>
+                    <div class="modal-info"><b>Location</b>Cape Town, South Africa</div>
+                    <div class="modal-info"><b>Best Time</b>Dec - Mar</div>
+                    <div class="modal-info"><b>Travel Cost</b>$900 - $1800</div>
+                </div>
+                <div class="plan-row">
+                    <a href="#routes-section" class="plan-btn" onclick="closeModal('clifton-beach-modal')">Plan Your Trip →</a>
+                    <button type="button" class="download-btn" data-download-plan aria-label="Download trip plan (Word)" title="Download trip plan (Word)"><i class="fa-solid fa-download"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Camps Bay Beach Modal -->
+    <div class="overlay" id="camps-bay-beach-modal">
+        <div class="modal-box">
+            <div class="left">
+                <div class="photo" style="background-image: url('https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=600&q=80')">
+                    <span class="tag">📍 South Africa</span>
+                </div>
+                <h2>Camps Bay Beach</h2>
+                <p class="loc">📍 Cape Town, South Africa</p>
+                <p class="desc">A trendy beach below the Twelve Apostles with palm-lined cafes and bars.</p>
+                <div class="stats">
+                    <div>Best Time<b>Nov - Mar</b></div>
+                    <div>Avg. Temp<b>18°C - 27°C</b></div>
+                    <div>Beach Type<b>White Sand</b></div>
+                    <div>Clarity<b>Good</b></div>
+                </div>
+            </div>
+            <div class="right">
+                <button class="close-btn" onclick="closeModal('camps-bay-beach-modal')">×</button>
+                <div>
+                    <h3>Highlights</h3>
+                    <ul>
+                        <li>Twelve Apostles backdrop</li>
+                        <li>Beachfront cafes</li>
+                        <li>Sunset cocktails</li>
+                        <li>Great for photos</li>
+                    </ul>
+                    <h3>Quick Info</h3>
+                    <div class="modal-info"><b>Location</b>Cape Town, South Africa</div>
+                    <div class="modal-info"><b>Best Time</b>Nov - Mar</div>
+                    <div class="modal-info"><b>Travel Cost</b>$900 - $1800</div>
+                </div>
+                <div class="plan-row">
+                    <a href="#routes-section" class="plan-btn" onclick="closeModal('camps-bay-beach-modal')">Plan Your Trip →</a>
+                    <button type="button" class="download-btn" data-download-plan aria-label="Download trip plan (Word)" title="Download trip plan (Word)"><i class="fa-solid fa-download"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Praia do Cassino Modal -->
+    <div class="overlay" id="praia-do-cassino-modal">
+        <div class="modal-box">
+            <div class="left">
+                <div class="photo" style="background-image: url('https://images.unsplash.com/photo-1483729558449-99ef09a8c325?auto=format&fit=crop&w=600&q=80')">
+                    <span class="tag">📍 Brazil</span>
+                </div>
+                <h2>Praia do Cassino</h2>
+                <p class="loc">📍 Rio Grande, Brazil</p>
+                <p class="desc">One of the longest beaches in the world, stretching for around 220 km.</p>
+                <div class="stats">
+                    <div>Best Time<b>Dec - Mar</b></div>
+                    <div>Avg. Temp<b>20°C - 28°C</b></div>
+                    <div>Beach Type<b>Fine Sand</b></div>
+                    <div>Clarity<b>Moderate</b></div>
+                </div>
+            </div>
+            <div class="right">
+                <button class="close-btn" onclick="closeModal('praia-do-cassino-modal')">×</button>
+                <div>
+                    <h3>Highlights</h3>
+                    <ul>
+                        <li>Extremely long coastline</li>
+                        <li>Driving on the sand</li>
+                        <li>Peaceful and open</li>
+                        <li>Shipwreck sightings</li>
+                    </ul>
+                    <h3>Quick Info</h3>
+                    <div class="modal-info"><b>Location</b>Rio Grande, Brazil</div>
+                    <div class="modal-info"><b>Best Time</b>Dec - Mar</div>
+                    <div class="modal-info"><b>Travel Cost</b>$700 - $1400</div>
+                </div>
+                <div class="plan-row">
+                    <a href="#routes-section" class="plan-btn" onclick="closeModal('praia-do-cassino-modal')">Plan Your Trip →</a>
+                    <button type="button" class="download-btn" data-download-plan aria-label="Download trip plan (Word)" title="Download trip plan (Word)"><i class="fa-solid fa-download"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ninety Mile Beach Modal -->
+    <div class="overlay" id="ninety-mile-beach-modal">
+        <div class="modal-box">
+            <div class="left">
+                <div class="photo" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80')">
+                    <span class="tag">📍 New Zealand</span>
+                </div>
+                <h2>Ninety Mile Beach</h2>
+                <p class="loc">📍 Northland, New Zealand</p>
+                <p class="desc">A huge, wild beach where you can surf, sandboard and drive along the shore.</p>
+                <div class="stats">
+                    <div>Best Time<b>Dec - Mar</b></div>
+                    <div>Avg. Temp<b>17°C - 25°C</b></div>
+                    <div>Beach Type<b>Golden Sand</b></div>
+                    <div>Clarity<b>Good</b></div>
+                </div>
+            </div>
+            <div class="right">
+                <button class="close-btn" onclick="closeModal('ninety-mile-beach-modal')">×</button>
+                <div>
+                    <h3>Highlights</h3>
+                    <ul>
+                        <li>Sand dune boarding</li>
+                        <li>Surf fishing</li>
+                        <li>Wild open landscape</li>
+                        <li>Cape Reinga trips</li>
+                    </ul>
+                    <h3>Quick Info</h3>
+                    <div class="modal-info"><b>Location</b>Northland, New Zealand</div>
+                    <div class="modal-info"><b>Best Time</b>Dec - Mar</div>
+                    <div class="modal-info"><b>Travel Cost</b>$1000 - $2000</div>
+                </div>
+               <div class="plan-row">
+                   <a href="#routes-section" class="plan-btn" onclick="closeModal('ninety-mile-beach-modal')">Plan Your Trip →</a>
+                   <button type="button" class="download-btn" data-download-plan aria-label="Download trip plan (Word)" title="Download trip plan (Word)"><i class="fa-solid fa-download"></i></button>
+               </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- gallery section  -->
+<section id="gallery">
+  <section class="bob-gallery">
+  <div class="bob-gallery__inner">
+
+    <!-- Heading -->
+    <div class="bob-gallery__head">
+      <span class="bob-gallery__eyebrow">Beach Gallery</span>
+      <h2 class="bob-gallery__title">Moments by the Ocean</h2>
+      <p class="bob-gallery__sub">Capture the beauty, feel the vibe, relive the memories.</p>
+    </div>
+
+    <!-- 4 Buttons -->
+    <div class="bob-gallery__filters">
+      <button class="bob-gallery__btn is-active" data-cat="sunsets">Sunsets</button>
+      <button class="bob-gallery__btn" data-cat="waves">Waves</button>
+      <button class="bob-gallery__btn" data-cat="islands">Islands</button>
+      <button class="bob-gallery__btn" data-cat="nature">Nature</button>
+    </div>
+
+    <!-- Images -->
+    <div class="bob-gallery__grid">
+
+      <!-- ===== SUNSETS (9) ===== -->
+      <div class="bob-gallery__item" data-cat="sunsets"><img src="images/sunset 1.jpg" alt="Sunset 1"></div>
+      <div class="bob-gallery__item" data-cat="sunsets"><img src="images/sunset 2.jpg" alt="Sunset 2"></div>
+      <div class="bob-gallery__item" data-cat="sunsets"><img src="images/sunset 3.jpg" alt="Sunset 3"></div>
+      <div class="bob-gallery__item" data-cat="sunsets"><img src="images/sunset 4.jpg" alt="Sunset 4"></div>
+      <div class="bob-gallery__item" data-cat="sunsets"><img src="images/sunset 5.jpg" alt="Sunset 5"></div>
+      <div class="bob-gallery__item" data-cat="sunsets"><img src="images/sunset 6.jpg" alt="Sunset 6"></div>
+      <div class="bob-gallery__item" data-cat="sunsets"><img src="images/sunset 7.jpg" alt="Sunset 7"></div>
+      <div class="bob-gallery__item" data-cat="sunsets"><img src="images/sunset 8.jpg" alt="Sunset 8"></div>
+      <div class="bob-gallery__item" data-cat="sunsets"><img src="images/sunset 9.jpg" alt="Sunset 9"></div>
+
+      <!-- ===== WAVES (9) ===== -->
+      <div class="bob-gallery__item is-hidden" data-cat="waves"><img src="images/wave 1.jpg" alt="Waves 1"></div>
+      <div class="bob-gallery__item is-hidden" data-cat="waves"><img src="images/wave 2.jpg" alt="Waves 2"></div>
+      <div class="bob-gallery__item is-hidden" data-cat="waves"><img src="images/wave 3.jpg" alt="Waves 3"></div>
+      <div class="bob-gallery__item is-hidden" data-cat="waves"><img src="images/wave 4.jpg" alt="Waves 4"></div>
+      <div class="bob-gallery__item is-hidden" data-cat="waves"><img src="images/wave 5.jpg" alt="Waves 5"></div>
+      <div class="bob-gallery__item is-hidden" data-cat="waves"><img src="images/wave 6.jpg" alt="Waves 6"></div>
+      <div class="bob-gallery__item is-hidden" data-cat="waves"><img src="images/wave 7.jpg" alt="Waves 7"></div>
+      <div class="bob-gallery__item is-hidden" data-cat="waves"><img src="images/wave 8.jpg" alt="Waves 8"></div>
+      <div class="bob-gallery__item is-hidden" data-cat="waves"><img src="images/wave 9.jpg" alt="Waves 9"></div>
+
+      <!-- ===== ISLANDS (9) ===== -->
+      <div class="bob-gallery__item is-hidden" data-cat="islands"><img src="images/islands 1.jpg" alt="Island 1"></div>
+      <div class="bob-gallery__item is-hidden" data-cat="islands"><img src="images/islands 2.jpg" alt="Island 2"></div>
+      <div class="bob-gallery__item is-hidden" data-cat="islands"><img src="images/islands 3.jpg" alt="Island 3"></div>
+      <div class="bob-gallery__item is-hidden" data-cat="islands"><img src="images/islands 4.jpg" alt="Island 4"></div>
+      <div class="bob-gallery__item is-hidden" data-cat="islands"><img src="images/islands 5.jpg" alt="Island 5"></div>
+      <div class="bob-gallery__item is-hidden" data-cat="islands"><img src="images/islands 6.jpg" alt="Island 6"></div>
+      <div class="bob-gallery__item is-hidden" data-cat="islands"><img src="images/islands 7.jpg" alt="Island 7"></div>
+      <div class="bob-gallery__item is-hidden" data-cat="islands"><img src="images/islands 8.jpg" alt="Island 8"></div>
+      <div class="bob-gallery__item is-hidden" data-cat="islands"><img src="images/islands 9.jpg" alt="Island 9"></div>
+
+      <!-- ===== NATURE (9) ===== -->
+      <div class="bob-gallery__item is-hidden" data-cat="nature"><img src="images/nature 1.jpg" alt="Nature 1"></div>
+      <div class="bob-gallery__item is-hidden" data-cat="nature"><img src="images/nature 2.jpg" alt="Nature 2"></div>
+      <div class="bob-gallery__item is-hidden" data-cat="nature"><img src="images/nature 3.jpg" alt="Nature 3"></div>
+      <div class="bob-gallery__item is-hidden" data-cat="nature"><img src="images/nature 4.jpg" alt="Nature 4"></div>
+      <div class="bob-gallery__item is-hidden" data-cat="nature"><img src="images/nature 5.jpg" alt="Nature 5"></div>
+      <div class="bob-gallery__item is-hidden" data-cat="nature"><img src="images/nature 6.jpg" alt="Nature 6"></div>
+      <div class="bob-gallery__item is-hidden" data-cat="nature"><img src="images/nature 7.jpg" alt="Nature 7"></div>
+      <div class="bob-gallery__item is-hidden" data-cat="nature"><img src="images/nature 8.jpg" alt="Nature 8"></div>
+      <div class="bob-gallery__item is-hidden" data-cat="nature"><img src="images/nature 9.jpg" alt="Nature 9"></div>
+
+    </div>
+  </div>
+</section>
+</section>
+<!-- routes section  -->
+<section class="page" id="routes-section" aria-label="Getting to the beach">
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-bus" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="15" rx="3"/><path d="M4 11h16M8 21v-3M16 21v-3"/><circle cx="8" cy="14.500" r=".6" fill="currentColor"/><circle cx="16" cy="14.500" r=".6" fill="currentColor"/><path d="M9 6.500h6"/></g></symbol>
+    <symbol id="i-plane" viewBox="0 0 24 24"><path fill="currentColor" d="M21 16v-2l-8-5V3.500a1.500 1.500 0 0 0-3 0V9l-8 5v2l8-2.500V19l-2 1.500V22l3.500-1 3.500 1v-1.500L13 19v-5.500z"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></g></symbol>
+    <symbol id="i-stop" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M12 2a7 7 0 0 0-7 7c0 5.200 7 13 7 13s7-7.800 7-13a7 7 0 0 0-7-7zm0 9.500A2.500 2.500 0 1 1 12 6.500a2.500 2.500 0 0 1 0 5z"/></symbol>
+    <symbol id="i-seat" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h6a2 2 0 0 1 2 2v7H7z"/><path d="M7 12l-1 6h12l-1.500-6M9 21h6"/></g></symbol>
+    <symbol id="i-cal" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3.500" y="5" width="17" height="15.500" rx="2"/><path d="M3.500 10h17M8 3v4M16 3v4"/></g></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="7" width="16" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/></g></symbol>
+    <symbol id="i-wifi" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M2.500 9a14 14 0 0 1 19 0M5.500 12.500a9.500 9.500 0 0 1 13 0M8.500 16a5 5 0 0 1 7 0"/><circle cx="12" cy="19.500" r=".8" fill="currentColor"/></g></symbol>
+    <symbol id="i-tag" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.500" cy="8.500" r="1.200" fill="currentColor"/></g></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><path d="M12 3l8 3v6c0 4.500-3.300 7.800-8 9-4.700-1.200-8-4.500-8-9V6z"/><path d="M8.500 12l2.500 2.500 4.500-5"/></g></symbol>
+    <symbol id="i-tree" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><path d="M12 3l5 7h-3l4 6H6l4-6H7z"/><path d="M12 16v5"/></g></symbol>
+    <symbol id="i-wallet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><path d="M4 7a2 2 0 0 1 2-2h11v4"/><rect x="4" y="7" width="16" height="13" rx="2"/><circle cx="16" cy="13.500" r="1" fill="currentColor"/></g></symbol>
+    <symbol id="i-people" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="9" cy="8" r="3.200"/><path d="M3 20c.5-3.500 3-5.500 6-5.500s5.500 2 6 5.500"/><circle cx="17" cy="9" r="2.500"/><path d="M17 14c2.200.3 3.700 2 4 4.500"/></g></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v6"/><circle cx="12" cy="7.500" r=".6" fill="currentColor"/></g></symbol>
+  </svg>
+ 
+ 
+    <header class="hero">
+      <svg class="hero__wave" viewBox="0 0 60 20" aria-hidden="true">
+        <path d="M2 8c6-8 10 6 16-1s10 6 16-1 10 6 16-1M2 15c6-8 10 6 16-1s10 6 16-1 10 6 16-1" fill="none" stroke="currentColor" stroke-width="2.200" stroke-linecap="round"/>
+      </svg>
+      <p class="hero__eyebrow"><span></span>Travel Routes<span></span></p>
+      <h1>Getting to the Beach</h1>
+      <p class="hero__text">Pick the way that suits your trip. Travel by road for a relaxed ride, or fly for the quickest way to the coast.</p>
+    </header>
+ 
+    <section class="routes" aria-label="Travel routes">
+ 
+      <!-- Bus route -->
+      <article class="tr-card">
+        <div class="tr-card__head">
+          <div class="tr-badge"><svg><use href="#i-bus"/></svg></div>
+          <div>
+            <h2>Bus Route</h2>
+            <p>Comfortable coach travel</p>
+          </div>
+        </div>
+ 
+        <div class="chips">
+          <span class="chip"><svg><use href="#i-tree"/></svg>Scenic Views</span>
+          <span class="chip"><svg><use href="#i-wallet"/></svg>Affordable</span>
+          <span class="chip"><svg><use href="#i-people"/></svg>Comfortable Rides</span>
+        </div>
+ 
+        <div class="route">
+          <div class="stop">
+            <div class="time">8:00 PM</div>
+            <h3>Lahore</h3>
+            <p>Daewoo Terminal</p>
+          </div>
+          <div class="track"><div class="track__icon"><svg><use href="#i-bus"/></svg></div></div>
+          <div class="stop stop--end">
+            <div class="time">8:00 AM</div>
+            <h3>Karachi</h3>
+            <p>Sohrab Goth</p>
+          </div>
+        </div>
+ 
+        <div class="tr-stats">
+          <div class="tr-stat"><svg><use href="#i-clock"/></svg><strong>12 hrs</strong><span>Duration</span></div>
+          <div class="tr-stat"><svg><use href="#i-stop"/></svg><strong>3 stops</strong><span>On the way</span></div>
+          <div class="tr-stat"><svg><use href="#i-seat"/></svg><strong>Business</strong><span>Seat class</span></div>
+        </div>
+ 
+        <ul class="details">
+          <li><svg><use href="#i-cal"/></svg>Departs daily, every evening</li>
+          <li><svg><use href="#i-bag"/></svg>One bag of up to 20 kg included</li>
+          <li><svg><use href="#i-wifi"/></svg>Wi-Fi, snacks and charging on board</li>
+        </ul>
+ 
+ 
+        <section class="panel" aria-labelledby="bus-routes-title">
+          <div class="panel__head">
+            <svg><use href="#i-bus"/></svg>
+            <h3 id="bus-routes-title">Bus Routes</h3>
+         
+          </div>
+          <p class="panel__sub">Popular bus routes to beach destinations (Sample Routes)</p>
+          <!-- BUS ROUTES LIST: each <li class="bus-item"> below is one route.
+               Its first child (the .thumb) is the image spot. -->
+          <ul class="bus-list">
+          <li class="bus-item">
+            <img class="thumb" src="https://www.yutong.pk/static/res/2026/6/11/column/35e4082de7084ce9b8a56339371eaaa9.jpg" alt="Bus travelling from Karachi to a coastal beach" loading="lazy" referrerpolicy="no-referrer">
+            <div>
+              <h4>Karachi → Coastal Beach</h4>
+              <p class="bus-meta"><svg><use href="#i-clock"/></svg><span><b>Departure:</b> 07:00 AM</span><i></i><svg><use href="#i-stop"/></svg><span><b>Journey:</b> 3–4 Hours</span></p>
+              <p class="bus-path"><svg><use href="#i-stop"/></svg>Karachi → Hub → Coastal Road → Beach</p>
+            </div>
+            
+          </li>
+          <li class="bus-item">
+            <img class="thumb" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuwhXYtNfuyaU25L8X9CstddgnnoTTRXKQL6ApujEQ_PFEQwW2mUwZvl3h&s=10" alt="Bus route from Lahore to a beach destination" loading="lazy" referrerpolicy="no-referrer">
+            <div>
+              <h4>Lahore → Beach Destination</h4>
+              <p class="bus-meta"><svg><use href="#i-clock"/></svg><span><b>Departure:</b> 06:30 AM</span><i></i><svg><use href="#i-stop"/></svg><span><b>Journey:</b> 8–10 Hours</span></p>
+              <p class="bus-path"><svg><use href="#i-stop"/></svg>Lahore → Multan → Hyderabad → Coastal Area</p>
+            </div>
+       
+          </li>
+          <li class="bus-item">
+            <img class="thumb" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS37Gg5GboAGyB4mM6IXSYbZw9LxvFtIlZ-eta8uccQp-hWQKDZkx548R0&s=10" alt="Bus route from Islamabad to a beach destination" loading="lazy" referrerpolicy="no-referrer">
+            <div>
+              <h4>Islamabad → Beach Destination</h4>
+              <p class="bus-meta"><svg><use href="#i-clock"/></svg><span><b>Departure:</b> 08:00 AM</span><i></i><svg><use href="#i-stop"/></svg><span><b>Journey:</b> 10–12 Hours</span></p>
+              <p class="bus-path"><svg><use href="#i-stop"/></svg>Islamabad → Faisalabad → Karachi → Beach</p>
+            </div>
+           
+          </li>
+          </ul>
+        </section>
+ 
+        <div class="tr-card__foot">
+          <div class="price"><small>Fare from</small><strong>Rs. 6,500</strong> <span>/ person</span></div>
+          <a href="#bbBookingModal" class="tr-btn" data-bb-book="Bus">Book Bus <svg><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+ 
+      <!-- Flight route -->
+      <article class="tr-card">
+        <div class="tr-card__head">
+          <div class="tr-badge"><svg><use href="#i-plane"/></svg></div>
+          <div>
+            <h2>Flight Route</h2>
+            <p>Fastest way to the coast</p>
+          </div>
+        </div>
+ 
+        <div class="chips">
+          <span class="chip"><svg><use href="#i-clock"/></svg>Faster Travel</span>
+          <span class="chip"><svg><use href="#i-shield"/></svg>More Comfort</span>
+          <span class="chip"><svg><use href="#i-bag"/></svg>Multiple Destinations</span>
+        </div>
+ 
+        <div class="route">
+          <div class="stop">
+            <div class="time">9:30 AM</div>
+            <h3>Lahore</h3>
+            <p>LHE, Allama Iqbal Airport</p>
+          </div>
+          <div class="track"><div class="track__icon"><svg><use href="#i-plane"/></svg></div></div>
+          <div class="stop stop--end">
+            <div class="time">11:25 AM</div>
+            <h3>Karachi</h3>
+            <p>KHI, Jinnah Airport</p>
+          </div>
+        </div>
+ 
+        <div class="tr-stats">
+          <div class="tr-stat"><svg><use href="#i-clock"/></svg><strong>1 hr 55 min</strong><span>Duration</span></div>
+          <div class="tr-stat"><svg><use href="#i-stop"/></svg><strong>Non-stop</strong><span>Direct flight</span></div>
+          <div class="tr-stat"><svg><use href="#i-seat"/></svg><strong>Economy</strong><span>Cabin class</span></div>
+        </div>
+ 
+        <ul class="details">
+          <li><svg><use href="#i-cal"/></svg>Flights run several times a day</li>
+          <li><svg><use href="#i-bag"/></svg>20 kg checked bag and 7 kg cabin bag</li>
+          <li><svg><use href="#i-tag"/></svg>Free changes up to 24 hours before departure</li>
+        </ul>
+ 
+ 
+        <section class="panel" aria-labelledby="flight-sched-title">
+          <div class="panel__head">
+            <svg><use href="#i-plane"/></svg>
+            <h3 id="flight-sched-title">Flight Schedule</h3>
+            
+          </div>
+          <p class="panel__sub">Popular flights to top beach destinations (Sample Schedule)</p>
+          <div class="table-wrap">
+            <table class="schedule">
+              <thead><tr><th>Flight No.</th><th>From</th><th>To</th><th>Departure</th><th>Arrival</th><th>Duration</th><th><span class="visually-hidden">Details</span></th></tr></thead>
+              <tbody>
+              <tr><td data-label="Flight No.">BB-101</td><td data-label="From">Karachi</td><td data-label="To">Maldives</td><td data-label="Departure">08:30 AM</td><td data-label="Arrival">11:15 AM</td><td data-label="Duration">2h 45m</td><td></td></tr>
+              <tr><td data-label="Flight No.">BB-205</td><td data-label="From">Lahore</td><td data-label="To">Bali</td><td data-label="Departure">10:00 AM</td><td data-label="Arrival">12:45 PM</td><td data-label="Duration">2h 45m</td><td></td></tr>
+              <tr><td data-label="Flight No.">BB-310</td><td data-label="From">Islamabad</td><td data-label="To">Phuket</td><td data-label="Departure">09:20 AM</td><td data-label="Arrival">03:30 PM</td><td data-label="Duration">6h 10m</td><td></td></tr>
+              <tr><td data-label="Flight No.">BB-412</td><td data-label="From">Karachi</td><td data-label="To">Goa</td><td data-label="Departure">06:45 PM</td><td data-label="Arrival">09:15 PM</td><td data-label="Duration">2h 30m</td><td> </td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="note"><svg><use href="#i-info"/></svg><span><b>Note:</b> Flight schedules are for demo purposes only and may not reflect actual timings.</span></p>
+        </section>
+ 
+        <div class="tr-card__foot">
+          <div class="price"><small>Fare from</small><strong>Rs. 24,000</strong> <span>/ person</span></div>
+          <a href="#bbBookingModal" class="tr-btn" data-bb-book="Flight">Book Flight <svg><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+ 
+    </section>
+ 
+    <!-- Bottom waves -->
+    <svg class="waves" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 50c180 40 360 40 540 10s360-40 540-10 270 30 360 10v70H0z" fill="#cfe6f6"/>
+      <path d="M0 75c200 30 380 30 560 5s340-25 520 0 260 20 360 0v40H0z" fill="#9ccbea"/>
+    </svg>
+</section>
+<!-- BEAUTIFUL BEACHES BOOKING MODAL: self-contained add-on -->
+<div class="bb-booking-modal" id="bbBookingModal" aria-hidden="true">
+  <div class="bb-booking-dialog" role="dialog" aria-modal="true" aria-labelledby="bbBookingTitle">
+    <div class="bb-booking-head">
+      <button class="bb-booking-close" type="button" data-bb-close aria-label="Close booking form">&times;</button>
+      <div class="bb-booking-icon" id="bbBookingIcon">🚌</div>
+      <p>BEAUTIFUL BEACHES</p>
+      <h2 id="bbBookingTitle">Bus Booking</h2>
+      <p>Choose your destination and plan your trip 🌊</p>
+    </div>
+    <div class="bb-booking-content">
+      <form id="bbBookingForm" novalidate>
+        <input type="hidden" id="bbTravelType" name="travelType">
+        <h3>🌴 Select Destination</h3>
+        <p class="bb-booking-hint">Please select one destination.</p>
+        <div class="bb-destination-list" id="bbDestinationList" role="radiogroup" aria-label="Destination"></div>
+        <p class="bb-booking-error" id="bbDestinationError" role="alert">Please select a destination.</p>
+        <h3>👤 Customer Information</h3>
+        <div class="bb-booking-grid">
+          <div class="bb-field"><label for="bbCustomerName">Full Name</label><input id="bbCustomerName" name="customerName" type="text" placeholder="Enter your name" autocomplete="name" maxlength="50" required><small class="bb-field-error" aria-live="polite"></small></div>
+          <div class="bb-field"><label for="bbCustomerEmail">Email Address</label><input id="bbCustomerEmail" name="customerEmail" type="email" placeholder="example@email.com" autocomplete="email" maxlength="100" required><small class="bb-field-error" aria-live="polite"></small></div>
+          <div class="bb-field"><label for="bbCustomerPhone">Phone Number</label><input id="bbCustomerPhone" name="customerPhone" type="tel" inputmode="tel" placeholder="03XXXXXXXXX" autocomplete="tel" maxlength="16" required><small class="bb-field-error" aria-live="polite"></small></div>
+          <div class="bb-field"><label for="bbTravelDate">Travel Date</label><input id="bbTravelDate" name="travelDate" type="date" required><small class="bb-field-error" aria-live="polite"></small></div>
+          <div class="bb-field"><label for="bbPassengers">Passengers</label><select id="bbPassengers" name="passengers" required><option value="1">1 Passenger</option><option value="2">2 Passengers</option><option value="3">3 Passengers</option><option value="4">4 Passengers</option><option value="5">5 Passengers</option><option value="6">6 Passengers</option></select><small class="bb-field-error" aria-live="polite"></small></div>
+          <div class="bb-field"><label for="bbDepartureCity">Departure City</label><select id="bbDepartureCity" name="departureCity" required><option value="">Choose city</option><option value="Karachi">Karachi</option><option value="Lahore">Lahore</option><option value="Islamabad">Islamabad</option><option value="Multan">Multan</option><option value="Hyderabad">Hyderabad</option></select><small class="bb-field-error" aria-live="polite"></small></div>
+          <div class="bb-field bb-field-wide"><label for="bbCustomerAddress">Home Address</label><textarea id="bbCustomerAddress" name="customerAddress" rows="2" placeholder="Enter your full address" autocomplete="street-address" maxlength="200" required></textarea><small class="bb-field-error" aria-live="polite"></small></div>
+        </div>
+        <div class="bb-booking-summary" id="bbBookingSummary">Your selected destination will appear here.</div>
+        <button class="bb-booking-submit" type="submit">Send Booking Request ➜</button>
+        <p class="bb-booking-result" id="bbBookingResult" role="status" aria-live="polite"></p>
+        <p class="bb-booking-footnote">🌊 Your beach adventure starts here!</p>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- about section  -->
+ <section id="about">
+<!-- ================= VISITOR STORIES (REVIEWS) SECTION ================= -->
+  <section class="reviews-section" id="reviews">
+    <div class="container">
+
+      <!-- Section heading -->
+      <span class="section-tag">Visitor Stories</span>
+      <h2 class="section-title">What Our Visitors Say</h2>
+      <p class="section-text">
+        Real people. Real experiences. Here are some kind words from our amazing visitors who have explored the beauty of beaches with us.
+      </p>
+
+      <!-- Average rating -->
+      <div class="average-rating">
+        <span class="average-number">5.0</span>
+        <span class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </span>
+        <span class="average-text">from 6 reviews</span>
+      </div>
+
+      <!-- Share feedback button -->
+      <a href="#feedback" class="main-btn">
+        Share Your Feedback <i class="fa-solid fa-arrow-right"></i>
+      </a>
+
+      <!-- Review cards -->
+      <div class="row g-4 mt-1">
+
+        <!-- Review 1 -->
+        <div class="col-12 col-md-6">
+          <div class="review-card">
+            <div class="review-body">
+              <div class="review-top">
+                <span class="stars">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </span>
+                <i class="fa-solid fa-quote-right quote-icon"></i>
+              </div>
+              <p class="review-text">The beaches were absolutely beautiful! The clean water and peaceful environment made our trip unforgettable. Highly recommended!</p>
+              <span class="review-date"><i class="fa-regular fa-calendar"></i> 12 Aug 2025</span>
+            </div>
+            <div class="review-footer">
+              <div class="avatar">AK</div>
+              <div class="reviewer-info">
+                <h6>Ayesha Khan</h6>
+                <small><i class="fa-solid fa-location-dot"></i> Karachi, Pakistan</small>
+              </div>
+              <span class="rating-badge">5.0</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="col-12 col-md-6">
+          <div class="review-card">
+            <div class="review-body">
+              <div class="review-top">
+                <span class="stars">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </span>
+                <i class="fa-solid fa-quote-right quote-icon"></i>
+              </div>
+              <p class="review-text">Great experience! The beach was clean, the facilities were excellent, and the staff was very friendly. I will definitely visit again!</p>
+              <span class="review-date"><i class="fa-regular fa-calendar"></i> 5 Aug 2025</span>
+            </div>
+            <div class="review-footer">
+              <div class="avatar">BA</div>
+              <div class="reviewer-info">
+                <h6>Bilal Ahmed</h6>
+                <small><i class="fa-solid fa-location-dot"></i> Lahore, Pakistan</small>
+              </div>
+              <span class="rating-badge">5.0</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="col-12 col-md-6">
+          <div class="review-card">
+            <div class="review-body">
+              <div class="review-top">
+                <span class="stars">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </span>
+                <i class="fa-solid fa-quote-right quote-icon"></i>
+              </div>
+              <p class="review-text">Such a peaceful place! The views are stunning and the weather was perfect. Will definitely visit again!</p>
+              <span class="review-date"><i class="fa-regular fa-calendar"></i> 28 Jul 2025</span>
+            </div>
+            <div class="review-footer">
+              <div class="avatar">SF</div>
+              <div class="reviewer-info">
+                <h6>Sara Fatima</h6>
+                <small><i class="fa-solid fa-location-dot"></i> Islamabad, Pakistan</small>
+              </div>
+              <span class="rating-badge">5.0</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 4 -->
+        <div class="col-12 col-md-6">
+          <div class="review-card">
+            <div class="review-body">
+              <div class="review-top">
+                <span class="stars">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </span>
+                <i class="fa-solid fa-quote-right quote-icon"></i>
+              </div>
+              <p class="review-text">Amazing beaches and great vibes! The trip was well organized and everything was just perfect. Loved every moment!</p>
+              <span class="review-date"><i class="fa-regular fa-calendar"></i> 20 Jul 2025</span>
+            </div>
+            <div class="review-footer">
+              <div class="avatar">UT</div>
+              <div class="reviewer-info">
+                <h6>Usman Tariq</h6>
+                <small><i class="fa-solid fa-location-dot"></i> Faisalabad, Pakistan</small>
+              </div>
+              <span class="rating-badge">5.0</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 5 -->
+        <div class="col-12 col-md-6">
+          <div class="review-card">
+            <div class="review-body">
+              <div class="review-top">
+                <span class="stars">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </span>
+                <i class="fa-solid fa-quote-right quote-icon"></i>
+              </div>
+              <p class="review-text">I loved the travel guides and beach tips. It really helped me plan my trip without any confusion!</p>
+              <span class="review-date"><i class="fa-regular fa-calendar"></i> 14 Jul 2025</span>
+            </div>
+            <div class="review-footer">
+              <div class="avatar">ZA</div>
+              <div class="reviewer-info">
+                <h6>Zainab Ali</h6>
+                <small><i class="fa-solid fa-location-dot"></i> Lahore, Pakistan</small>
+              </div>
+              <span class="rating-badge">5.0</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 6 -->
+        <div class="col-12 col-md-6">
+          <div class="review-card">
+            <div class="review-body">
+              <div class="review-top">
+                <span class="stars">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </span>
+                <i class="fa-solid fa-quote-right quote-icon"></i>
+              </div>
+              <p class="review-text">The best beach experience I've ever had! The sunset views were breathtaking. Can't wait to explore more places with you guys!</p>
+              <span class="review-date"><i class="fa-regular fa-calendar"></i> 8 Jul 2025</span>
+            </div>
+            <div class="review-footer">
+              <div class="avatar">HK</div>
+              <div class="reviewer-info">
+                <h6>Hamza Khan</h6>
+                <small><i class="fa-solid fa-location-dot"></i> Multan, Pakistan</small>
+              </div>
+              <span class="rating-badge">5.0</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- ================= FEEDBACK FORM SECTION ================= -->
+  <section class="feedback-section" id="feedback">
+    <div class="container">
+
+      <!-- Section heading -->
+      <span class="section-tag">Your Feedback</span>
+      <h2 class="section-title">Share Your Experience</h2>
+      <p class="section-text">
+        Your opinion matters! Help us improve and make our beach experiences even better. We'd love to hear from you!
+      </p>
+
+      <!-- Icon circle -->
+      <div class="feedback-icon">
+        <i class="fa-regular fa-comments"></i>
+      </div>
+
+      <!-- Feedback form -->
+      <form id="feedbackForm" novalidate>
+
+        <!-- Name and email -->
+        <div class="row g-3">
+          <div class="col-12 col-md-6">
+            <div class="input-box">
+              <i class="fa-regular fa-user"></i>
+              <input type="text" id="name" placeholder="Your Name">
+            </div>
+            <small class="error-text" id="nameError"></small>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="input-box">
+              <i class="fa-regular fa-envelope"></i>
+              <input type="email" id="email" placeholder="Your Email">
+            </div>
+            <small class="error-text" id="emailError"></small>
+          </div>
+        </div>
+
+        <!-- Rating and review box -->
+        <div class="review-box">
+          <div class="rating-row">
+            <span class="rating-label">Your Rating</span>
+            <span class="rating-stars" id="ratingStars">
+              <i class="fa-solid fa-star" data-value="1"></i>
+              <i class="fa-solid fa-star" data-value="2"></i>
+              <i class="fa-solid fa-star" data-value="3"></i>
+              <i class="fa-solid fa-star" data-value="4"></i>
+              <i class="fa-solid fa-star" data-value="5"></i>
+            </span>
+          </div>
+          <small class="error-text" id="ratingError"></small>
+
+          <textarea id="review" rows="4" placeholder="Your Feedback"></textarea>
+          <small class="error-text" id="reviewError"></small>
+
+          <button type="submit" class="submit-btn">
+            Submit Feedback <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+
+      </form>
+    </div>
+  </section>
+  <!-- ================= SUCCESS POPUP ================= -->
+  <div class="modal fade" id="successModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content success-modal">
+        <div class="success-icon"><i class="fa-solid fa-check"></i></div>
+        <h4>Review Submitted</h4>
+        <p>Thank you for sharing your experience with us!</p>
+        <button type="button" class="main-btn" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+<!-- about us  -->
+<section class="bob-about">
+  <!-- ============ HERO ============ -->
+  <div class="bob-hero">
+    <div class="bob-wrap">
+      <div class="bob-hero-grid">
+
+        <div>
+          <span class="bob-eyebrow">About Us</span>
+
+          <h1 class="bob-title">We're More Than <em>Just a Travel Website</em></h1>
+
+          <p class="bob-lead">
+            At Beauty of Beaches, we believe that the ocean has a special way of making
+            life better. Our mission is to help you discover the most beautiful beaches
+            around the world, plan your perfect getaway, and create unforgettable memories.
+          </p>
+
+          <p class="bob-lead">
+            We are a passionate team of travel lovers, explorers and dreamers, dedicated
+            to bringing you the best beach destinations, travel tips and experiences —
+            all in one place.
+          </p>
+
+          <a href="#journey" class="bob-btn">
+            Discover Our Journey <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="bob-hero-media">
+          <div class="bob-script">Explore<br>Dream<br>Discover</div>
+
+          <img
+            src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=1200&q=85"
+            alt="Beautiful tropical beach with turquoise ocean"
+            loading="lazy">
+
+          <div class="bob-badge">
+            <i class="fa-solid fa-umbrella-beach"></i>
+            <div>
+              <strong>500+</strong>
+              <span>Beaches explored</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <span class="bob-wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 90" preserveAspectRatio="none">
+        <path fill="currentColor" d="M0,50 C240,100 480,0 760,35 C1040,70 1240,20 1440,48 L1440,90 L0,90 Z"/>
+      </svg>
+    </span>
+  </div>
+
+  <!-- ============ VALUES ============ -->
+  <div class="bob-values" id="journey">
+    <div class="bob-wrap">
+
+      <div class="bob-head">
+        <span class="bob-eyebrow">Our Values</span>
+        <h2 class="bob-title">What <em>We Stand For</em></h2>
+      </div>
+
+      <div class="bob-values-grid">
+
+        <div class="bob-card">
+          <div class="bob-icon"><i class="fa-regular fa-compass"></i></div>
+          <h3>Authenticity</h3>
+          <p>We share real experiences, real places and honest recommendations.</p>
+        </div>
+
+        <div class="bob-card">
+          <div class="bob-icon"><i class="fa-solid fa-earth-americas"></i></div>
+          <h3>Sustainability</h3>
+          <p>We promote responsible travel and care for the natural beauty of our beaches.</p>
+        </div>
+
+        <div class="bob-card">
+          <div class="bob-icon"><i class="fa-solid fa-people-group"></i></div>
+          <h3>Community</h3>
+          <p>We bring together travelers, locals and beach lovers from around the world.</p>
+        </div>
+
+        <div class="bob-card">
+          <div class="bob-icon"><i class="fa-regular fa-heart"></i></div>
+          <h3>Passion</h3>
+          <p>We're driven by our love for the ocean, adventure and exploration.</p>
+        </div>
+
+        <div class="bob-card">
+          <div class="bob-icon"><i class="fa-regular fa-star"></i></div>
+          <h3>Excellence</h3>
+          <p>We always aim to provide the best guides, tips and travel resources.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ STORY ============ -->
+  <div class="bob-story-top">
+    <span class="bob-wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 90" preserveAspectRatio="none">
+        <path fill="#072c4f" d="M0,40 C260,0 520,90 800,50 C1060,14 1260,70 1440,35 L1440,90 L0,90 Z"/>
+      </svg>
+    </span>
+  </div>
+
+  <div class="bob-story">
+    <div class="bob-wrap">
+      <div class="bob-story-grid">
+
+        <div class="bob-story-media">
+          <img
+            src="https://images.unsplash.com/photo-1473116763249-2faaef81ccda?auto=format&fit=crop&w=1100&q=85"
+            alt="A beautiful beach with a wooden walkway"
+            loading="lazy">
+
+          <div class="bob-label">
+            Beautiful Beaches<br>Brighter Days <i class="fa-solid fa-heart"></i>
+          </div>
+        </div>
+
+        <div>
+          <span class="bob-eyebrow">Our Story</span>
+
+          <h2 class="bob-title">How It <em>All Started</em></h2>
+
+          <p class="bob-text">
+            Beauty of Beaches began with a simple idea — to share the world's most
+            beautiful beaches with fellow travelers. What started as a personal passion
+            soon grew into a platform, helping thousands of people plan their dream trips,
+            find hidden gems, and experience the ocean like never before.
+          </p>
+
+          <p class="bob-text">
+            Today, we continue to grow, inspired by the amazing beach communities and
+            the incredible places our users explore with us.
+          </p>
+
+          <div class="bob-stats">
+            <div class="bob-stat">
+              <i class="fa-solid fa-umbrella-beach"></i>
+              <strong>500+</strong>
+              <span>Beach Destinations</span>
+            </div>
+
+            <div class="bob-stat">
+              <i class="fa-solid fa-people-group"></i>
+              <strong>50K+</strong>
+              <span>Happy Travelers</span>
+            </div>
+
+            <div class="bob-stat">
+              <i class="fa-solid fa-camera"></i>
+              <strong>1000+</strong>
+              <span>Travel Photos</span>
+            </div>
+
+            <div class="bob-stat">
+              <i class="fa-regular fa-star"></i>
+              <strong>4.8/5</strong>
+              <span>User Rating</span>
+            </div>
+          </div>
+
+          <div class="bob-closing">
+            <i class="fa-solid fa-water"></i>
+            Together, let's explore more
+            <i class="fa-solid fa-water"></i>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</section>
+</section>
+    <!-- CONTACT FORM -->
+   <section id="contact">
+    <h1 style="display: flex; justify-content: center; color:  #1a3d63;">─── Contact Us ───</h1>
+  <div class="contact-container">
+    <section class="information">
+      <h2><i class="fa-solid fa-water"></i> Our Information</h2>
+      <p class="intro">Feel free to reach out to us through any of the following ways. We're here to help!</p>
+
+      <div class="info-item">
+        <div class="icon-box"><i class="fa-solid fa-location-dot"></i></div>
+        <div>
+          <h3>Our Location</h3>
+          <p>123 Beachside Road,<br>Karachi, Pakistan</p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <div class="icon-box"><i class="fa-solid fa-envelope"></i></div>
+        <div>
+          <h3>Email Us</h3>
+          <a href="mailto:beautybeaches03@gmail.com">beautybeaches03@gmail.com</a>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <div class="icon-box"><i class="fa-solid fa-phone"></i></div>
+        <div>
+          <h3>Call Us</h3>
+          <p>+92 300 1234567<br>(Mon - Fri, 9AM - 6PM)</p>
+        </div>
+      </div>
+
+      <div class="handwriting">Let's keep<br>in touch! ♡</div>
+    </section>
+
+    <section class="form-card">
+      <div class="form-heading">
+        <i class="fa-solid fa-paper-plane"></i>
+        <div>
+          <h2>Send Us a Message</h2>
+          <p>We'll get back to you as soon as possible.</p>
+        </div>
+      </div>
+
+      <form id="contactForm" novalidate>
+
+        <div class="input-row">
+          <div class="field-group">
+            <div class="input-box" id="contactNameBox">
+              <i class="fa-regular fa-user"></i>
+              <input type="text" id="contactName" placeholder="Your Name" maxlength="50">
+            </div>
+            <small class="error"></small>
+          </div>
+
+          <div class="field-group">
+            <div class="input-box" id="contactEmailBox">
+              <i class="fa-regular fa-envelope"></i>
+              <input type="email" id="contactEmail" placeholder="Your Email" maxlength="100">
+            </div>
+            <small class="error"></small>
+          </div>
+        </div>
+
+        <div class="field-group">
+          <div class="input-box" id="contactPhoneBox">
+            <i class="fa-solid fa-phone"></i>
+            <input type="tel" id="contactPhone" placeholder="Phone Number (e.g. +923001234567)" maxlength="16">
+          </div>
+          <small class="error"></small>
+        </div>
+
+        <div class="field-group">
+          <div class="input-box" id="contactSubjectBox">
+            <i class="fa-regular fa-comment-dots"></i>
+            <select id="contactSubject">
+              <option value="">Select Subject</option>
+              <option value="General Inquiry">General Inquiry</option>
+              <option value="Beach Reviews">Beach Reviews</option>
+              <option value="Feedback">Feedback</option>
+              <option value="Business Inquiry">Business Inquiry</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <small class="error"></small>
+        </div>
+
+        <div class="field-group">
+          <div class="input-box" id="contactMessageBox">
+            <i class="fa-regular fa-message"></i>
+            <textarea id="contactMessage" placeholder="Your Message" maxlength="1000"></textarea>
+          </div>
+          <small class="error"></small>
+        </div>
+
+        <div class="success-message" id="successMessage">
+          <i class="fa-solid fa-circle-check"></i>
+          All fields are valid! Your form is ready.
+        </div>
+
+        <button type="submit" class="submit-btn">
+          <i class="fa-solid fa-paper-plane"></i>
+          Send Message
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+      </form>
+    </section>
+
+  </div>
+</section>
+</div>
+</section> 
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+
+    <div class="wave-area">
+
+        <div class="wave wave-back"></div>
+        <div class="wave wave-front"></div>
+
+    </div>
+
+
+    <div class="footer-content">
+
+        <!-- COLUMN 1 -->
+        <div class="footer-column about-column">
+
+            <div class="brand">
+
+                <div class="brand-icon"></div>
+
+                <div>
+
+                    <h2>Beauty of Beaches</h2>
+
+                    <p>
+                        EXPLORE • RELAX • DISCOVER
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <p class="about-text">
+                From crystal clear waters to golden sands,
+                we bring you the most beautiful beaches and
+                unforgettable travel experiences around the world.
+            </p>
+
+
+            <div class="social-icons">
+
+                <a href="https://www.instagram.com/beaut_yofbeaches/">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="https://www.tiktok.com/@beauty.beaches">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+
+                <a href="https://www.youtube.com/@BeautyBeaches-i7q">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+                <a href="https://pin.it/51uAAslvc">
+                    <i class="fa-brands fa-pinterest-p"></i>
+                </a>
+
+            </div>
+
+
+            <div class="beach-quote">
+
+                Life is better
+                <br>
+                at the beach
+                <span>♡</span>
+
+                <div class="quote-wave">
+                    〰〰
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- COLUMN 2 -->
+        <div class="footer-column links-column">
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li>
+                    <a href="#home">
+                        <span>→</span>
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#beaches">
+                        <span>→</span>
+                        Beaches
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#gallery">
+                        <span>→</span>
+                        Gallery
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#about">
+                        <span>→</span>
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contact">
+                        <span>→</span>
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- COLUMN 3 -->
+        <div class="footer-column destination-column">
+
+            <h3>
+                <i class="fa-solid fa-location-dot"></i>
+                Popular Destinations
+            </h3>
+
+
+            <div class="destination">
+
+                <img
+                    src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=200&q=80"
+                    alt="Maldives">
+
+                <div>
+                    <h4>Maldives</h4>
+                    <p>Paradise on Earth</p>
+                </div>
+
+            </div>
+
+
+            <div class="destination">
+
+                <img
+                    src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=200&q=80"
+                    alt="Santorini">
+
+                <div>
+                    <h4>Santorini</h4>
+                    <p>Island of Dreams</p>
+                </div>
+
+            </div>
+
+
+            <div class="destination">
+
+                <img
+                    src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=200&q=80"
+                    alt="Bali">
+
+                <div>
+                    <h4>Bali</h4>
+                    <p>Nature & Culture</p>
+                </div>
+
+            </div>
+
+
+            <div class="destination">
+
+                <img
+                    src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=200&q=80"
+                    alt="Goa">
+
+                <div>
+                    <h4>Goa</h4>
+                    <p>Sun, Sand & Fun</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- COLUMN 4 -->
+        <div class="footer-column newsletter-column">
+
+            <h3>
+                <i class="fa-regular fa-envelope"></i>
+                Newsletter
+            </h3>
+
+            <p class="newsletter-text">
+                Get travel tips, beach guides, and
+                exclusive offers delivered to your inbox.
+            </p>
+
+
+            <form class="newsletter-form" id="newsletterForm" novalidate>
+
+                    <div class="email-box" id="newsletterBox">
+
+                        <i class="fa-regular fa-envelope"></i>
+
+                        <input
+                            type="email"
+                            id="newsletterEmail"
+                            placeholder="Enter your email address"
+                            autocomplete="email">
+
+                        <button type="submit" aria-label="Subscribe">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+
+                    </div>
+
+                    <p class="email-error" id="newsletterError"></p>
+
+                </form>
+
+
+            <div class="follow">
+
+                <h3>
+                    <i class="fa-solid fa-share-nodes"></i>
+                    Follow Us
+                </h3>
+
+
+                <div class="social-icons">
+
+                    <a href="https://www.instagram.com/beaut_yofbeaches/">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://www.tiktok.com/@beauty.beaches">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+
+                    <a href="https://www.youtube.com/@BeautyBeaches-i7q">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                    <a href="https://pin.it/51uAAslvc">
+                        <i class="fa-brands fa-pinterest-p"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Beauty of Beaches. All rights reserved.
+        </p>
+
+        <div class="bottom-links">
+
+            <a href="#">Privacy Policy</a>
+
+            <span>|</span>
+
+            <a href="#">Terms & Conditions</a>
+
+            <span>|</span>
+
+            <a href="#">Sitemap</a>
+
+        </div>
+
+    </div>
+
+</footer>
+<!-- Subscribe Notification Popup -->
+<div class="toast-popup" id="subscribeToast" role="status" aria-live="polite">
+    <div class="toast-icon"><i class="fa-solid fa-check"></i></div>
+    <div class="toast-text">
+        <strong>Newsletter Subscribed!</strong>
+        <span id="toastEmail"></span>
+    </div>
+    <button type="button" class="toast-close" id="toastClose" aria-label="Close">&times;</button>
+</div>
+<!-- java script  -->
+<script>
+//////////////  visitor count  //////////////////////
+  (function () {
+            let count = sessionStorage.getItem("session_views");
+            if (!count) { count = 1; }
+            else { count = Number(count) + 1; }
+            sessionStorage.setItem("session_views", count);
+            const el = document.getElementById("visitor-count");
+            if (el) { el.innerText = count; }
+        })();
+/////////////////  modal  ////////////////////////
+// Filtering function for 4 specific zones
+        function filterZone(zone) {
+            // Update Active Class on Buttons
+            $(".fltr-btn").removeClass("active");
+            $("#btn-" + zone).addClass("active");
+
+            // Hide all card wrappers and show selected zone cards
+            $(".card-wrapper").hide();
+            $("." + zone).fadeIn(300);
+        }
+
+        // Modal Open logic
+        function openModal(id) {
+            const modal = document.getElementById(id);
+            if (modal) {
+                modal.classList.add('show');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        // Modal Close logic
+        function closeModal(id) {
+            const modal = document.getElementById(id);
+            if (modal) {
+                modal.classList.remove('show');
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        // Close modal when clicking on dark overlay background
+        document.addEventListener('click', function (e) {
+            if (e.target.classList.contains('overlay')) {
+                e.target.classList.remove('show');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Close modal on Escape key press
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                document.querySelectorAll('.overlay.show').forEach(function (overlay) {
+                    overlay.classList.remove('show');
+                });
+                document.body.style.overflow = 'auto';
+            }
+        });
+///////////// gallery /////////////////////
+  var buttons = document.querySelectorAll(".bob-gallery__btn");
+  var items = document.querySelectorAll(".bob-gallery__item");
+
+  buttons.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+
+      // active button change
+      buttons.forEach(function (b) { b.classList.remove("is-active"); });
+      btn.classList.add("is-active");
+
+      // images show / hide
+      var cat = btn.getAttribute("data-cat");
+      items.forEach(function (item) {
+        if (item.getAttribute("data-cat") === cat) {
+          item.classList.remove("is-hidden");
+        } else {
+          item.classList.add("is-hidden");
+        }
+      });
+    });
+  });
+/////////////// newsletter subscription /////////////////////
+(function () {
+    var form = document.getElementById("newsletterForm");
+    var input = document.getElementById("newsletterEmail");
+    var box = document.getElementById("newsletterBox");
+    var error = document.getElementById("newsletterError");
+    var toast = document.getElementById("subscribeToast");
+    var toastEmail = document.getElementById("toastEmail");
+    var toastClose = document.getElementById("toastClose");
+    var timer;
+
+    var pattern = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+
+    function showError(msg) {
+        error.textContent = msg;
+        box.classList.add("invalid");
+    }
+
+    function clearError() {
+        error.textContent = "";
+        box.classList.remove("invalid");
+    }
+
+    function hideToast() {
+        toast.classList.remove("show");
+    }
+
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        var email = input.value.trim();
+
+        if (email === "") {
+            showError("Please enter your email address.");
+            input.focus();
+            return;
+        }
+        if (!pattern.test(email)) {
+            showError("Please enter a valid email address.");
+            input.focus();
+            return;
+        }
+
+        clearError();
+        toastEmail.textContent = email;
+        toast.classList.add("show");
+        form.reset();
+
+        clearTimeout(timer);
+        timer = setTimeout(hideToast, 4000);
+    });
+
+    input.addEventListener("input", clearError);
+    toastClose.addEventListener("click", hideToast);
+})();
+
+///////////////// review ////////////////////////////
+(function () {
+// ================= ELEMENTS =================
+var form = document.getElementById("feedbackForm");
+var nameInput = document.getElementById("name");
+var emailInput = document.getElementById("email");
+var reviewInput = document.getElementById("review");
+var stars = document.querySelectorAll("#ratingStars i");
+
+var selectedRating = 0;
+
+// ================= STAR RATING (click to select) =================
+stars.forEach(function (star) {
+  star.addEventListener("click", function () {
+    selectedRating = Number(star.getAttribute("data-value"));
+
+    stars.forEach(function (s) {
+      if (Number(s.getAttribute("data-value")) <= selectedRating) {
+        s.classList.add("active");
+      } else {
+        s.classList.remove("active");
+      }
+    });
+  });
+});
+
+// ================= SHOW / CLEAR ERRORS =================
+function showError(errorId, message, box) {
+  document.getElementById(errorId).textContent = message;
+  if (box) box.classList.add("invalid");
+}
+
+function clearErrors() {
+  var errors = document.querySelectorAll(".error-text");
+  errors.forEach(function (e) {
+    e.textContent = "";
+  });
+
+  document.querySelectorAll(".invalid").forEach(function (e) {
+    e.classList.remove("invalid");
+  });
+}
+
+// ================= VALIDATION (runs only on submit click) =================
+function validateForm() {
+  var isValid = true;
+  var name = nameInput.value.trim();
+  var email = emailInput.value.trim();
+  var review = reviewInput.value.trim();
+  var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  clearErrors();
+
+  // Name
+  if (name === "") {
+    showError("nameError", "Please enter your name", nameInput.parentElement);
+    isValid = false;
+  } else if (name.length < 3) {
+    showError("nameError", "Name must be at least 3 characters", nameInput.parentElement);
+    isValid = false;
+  }
+
+  // Email
+  if (email === "") {
+    showError("emailError", "Please enter your email", emailInput.parentElement);
+    isValid = false;
+  } else if (!emailPattern.test(email)) {
+    showError("emailError", "Please enter a valid email", emailInput.parentElement);
+    isValid = false;
+  }
+
+  // Rating
+  if (selectedRating === 0) {
+    showError("ratingError", "Please select a rating");
+    isValid = false;
+  }
+
+  // Review (minimum 20 characters)
+  if (review === "") {
+    showError("reviewError", "Please write your feedback", reviewInput);
+    isValid = false;
+  } else if (review.length < 20) {
+    showError("reviewError", "Review is too short (minimum 20 characters)", reviewInput);
+    isValid = false;
+  }
+
+  return isValid;
+}
+
+// ================= SUBMIT =================
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  if (validateForm()) {
+    // Show success popup
+    var modal = new bootstrap.Modal(document.getElementById("successModal"));
+    modal.show();
+
+    // Reset form and stars
+    form.reset();
+    selectedRating = 0;
+    stars.forEach(function (s) {
+      s.classList.remove("active");
+    });
+  }
+});
+})();
+////////////   contact  ////////////////////
+(function () {
+  const contactForm = document.getElementById("contactForm");
+
+  const fields = [
+    {
+      id: "contactName",
+      box: "contactNameBox",
+      regex: /^[A-Za-z][A-Za-z .'-]{1,49}$/,
+      message: "Enter a valid name (letters only)."
+    },
+    {
+      id: "contactEmail",
+      box: "contactEmailBox",
+      regex: /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/,
+      message: "Enter a valid email, e.g. name@gmail.com."
+    },
+    {
+      id: "contactPhone",
+      box: "contactPhoneBox",
+      regex: /^(?:\+92|0092|0)3[0-9]{9}$/,
+      message: "Enter a valid Pakistani mobile number."
+    },
+    {
+      id: "contactSubject",
+      box: "contactSubjectBox",
+      regex: /^(General Inquiry|Beach Reviews|Feedback|Business Inquiry|Other)$/,
+      message: "Please select a subject."
+    },
+    {
+      id: "contactMessage",
+      box: "contactMessageBox",
+      regex: /^[\s\S]{10,1000}$/,
+      message: "Message must contain at least 10 characters."
+    }
+  ];
+
+  function validateField(field) {
+    const input = document.getElementById(field.id);
+    const box = document.getElementById(field.box);
+    const error = box.parentElement.querySelector(".error");   // error ab box ke neeche hai
+    const value = input.value.trim();
+
+    const valid = field.regex.test(value);
+
+    box.classList.remove("valid", "invalid");
+
+    if (!valid) {
+      box.classList.add("invalid");
+      error.textContent = field.message;
+    } else {
+      box.classList.add("valid");
+      error.textContent = "";
+    }
+
+    return valid;
+  }
+
+  fields.forEach(function (field) {
+    const input = document.getElementById(field.id);
+
+    input.addEventListener("input", function () {
+      validateField(field);
+      document.getElementById("successMessage").style.display = "none";
+    });
+
+    input.addEventListener("change", function () {
+      validateField(field);
+    });
+  });
+
+  contactForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    let formIsValid = true;
+
+    fields.forEach(function (field) {
+      if (!validateField(field)) {
+        formIsValid = false;
+      }
+    });
+
+    const success = document.getElementById("successMessage");
+
+    if (formIsValid) {
+      success.style.display = "block";
+      success.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    } else {
+      success.style.display = "none";
+
+      const firstInvalid = contactForm.querySelector(
+        ".input-box.invalid input, .input-box.invalid select, .input-box.invalid textarea"
+      );
+      if (firstInvalid) firstInvalid.focus();
+    }
+  });
+})();
+///////////////// routess ////////////////////////
+(function () {
+  "use strict";
+  const modal = document.getElementById("bbBookingModal");
+  const form = document.getElementById("bbBookingForm");
+  const destinationList = document.getElementById("bbDestinationList");
+  const destinations = {
+    Bus: ["Karachi Coastal Beach", "Hawke's Bay Beach", "Sandspit Beach", "Ormara Beach"],
+    Flight: ["Maldives", "Bali", "Phuket", "Goa"]
+  };
+  if (!modal || !form || !destinationList) return;
+ 
+  const get = (id) => document.getElementById(id);
+  let previousFocus = null;
+ 
+  /* ================= REGEX VALIDATION RULES ================= */
+  function todayString() {
+    const d = new Date();
+    return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
+  }
+ 
+  const rules = {
+    bbCustomerName: {
+      regex: /^[A-Za-z][A-Za-z .'-]{2,49}$/,
+      message: "Enter a valid name (3-50 letters only)."
+    },
+    bbCustomerEmail: {
+      regex: /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/,
+      message: "Enter a valid email, e.g. name@gmail.com."
+    },
+    bbCustomerPhone: {
+      regex: /^(?:\+92|0092|0)3[0-9]{9}$/,
+      message: "Enter a valid Pakistani mobile number, e.g. 03001234567.",
+      normalize: function (v) { return v.replace(/[\s-]/g, ""); }
+    },
+    bbTravelDate: {
+      regex: /^\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])$/,
+      message: "Please select a valid travel date.",
+      check: function (v) {
+        const d = new Date(v + "T00:00:00");
+        const real = !isNaN(d) && d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0") === v;
+        if (!real) return "Please select a valid travel date.";
+        if (v < todayString()) return "Travel date cannot be in the past.";
+        return "";
+      }
+    },
+    bbPassengers: {
+      regex: /^[1-6]$/,
+      message: "Please select 1 to 6 passengers."
+    },
+    bbDepartureCity: {
+      regex: /^(Karachi|Lahore|Islamabad|Multan|Hyderabad)$/,
+      message: "Please choose your departure city."
+    },
+    bbCustomerAddress: {
+      regex: /^[A-Za-z0-9\s,.#\/'()-]{10,200}$/,
+      message: "Enter a valid address (10-200 characters: letters, numbers , . # / - only)."
+    }
+  };
+  const fieldIds = Object.keys(rules);
+ 
+  function validateField(id) {
+    const rule = rules[id];
+    const input = get(id);
+    const wrap = input.closest(".bb-field");
+    const errorEl = wrap.querySelector(".bb-field-error");
+    let value = input.value.trim();
+    if (rule.normalize) value = rule.normalize(value);
+ 
+    let message = rule.regex.test(value) ? "" : rule.message;
+    if (!message && rule.check) message = rule.check(value);
+ 
+    wrap.classList.toggle("bb-invalid", !!message);
+    wrap.classList.toggle("bb-valid", !message);
+    input.setAttribute("aria-invalid", message ? "true" : "false");
+    errorEl.textContent = message;
+    return !message;
+  }
+ 
+  function clearValidation() {
+    fieldIds.forEach(function (id) {
+      const input = get(id);
+      const wrap = input.closest(".bb-field");
+      wrap.classList.remove("bb-valid", "bb-invalid");
+      wrap.querySelector(".bb-field-error").textContent = "";
+      input.removeAttribute("aria-invalid");
+    });
+    get("bbDestinationError").classList.remove("bb-show");
+  }
+ 
+  fieldIds.forEach(function (id) {
+    const input = get(id);
+    const wrap = input.closest(".bb-field");
+    input.addEventListener("input", function () {
+      if (id === "bbCustomerPhone") input.value = input.value.replace(/[^\d+\s-]/g, "");
+      // live feedback only after the field was checked once
+      if (wrap.classList.contains("bb-valid") || wrap.classList.contains("bb-invalid")) validateField(id);
+    });
+    input.addEventListener("change", function () { validateField(id); });
+    input.addEventListener("blur", function () {
+      if (input.value.trim() !== "") validateField(id);
+    });
+  });
+ 
+  /* ================= MODAL ================= */
+  function updateSummary() {
+    const selected = destinationList.querySelector('input[name="bbDestination"]:checked');
+    get("bbBookingSummary").textContent = selected
+      ? "Selected: " + selected.value + " | Type: " + get("bbTravelType").value
+      : "Your selected destination will appear here.";
+  }
+ 
+  function openBooking(type) {
+    if (!destinations[type]) return;
+    previousFocus = document.activeElement;
+    form.reset();
+    clearValidation();
+    get("bbTravelType").value = type;
+    get("bbBookingTitle").textContent = type === "Bus" ? "Bus Booking" : "Flight Booking";
+    get("bbBookingIcon").textContent = type === "Bus" ? "🚌" : "✈️";
+    destinationList.replaceChildren();
+    destinations[type].forEach(function (destination, index) {
+      const label = document.createElement("label");
+      label.className = "bb-destination-option";
+      const radio = document.createElement("input");
+      radio.type = "radio";
+      radio.name = "bbDestination";
+      radio.value = destination;
+      radio.id = "bbDestination" + index;
+      radio.addEventListener("change", function () {
+        get("bbDestinationError").classList.remove("bb-show");
+        updateSummary();
+      });
+      const span = document.createElement("span");
+      span.textContent = destination;
+      label.append(radio, span);
+      destinationList.appendChild(label);
+    });
+    get("bbBookingSummary").textContent = "Your selected destination will appear here.";
+    get("bbBookingResult").textContent = "";
+    get("bbTravelDate").min = todayString();
+    modal.classList.add("bb-is-open");
+    modal.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+    get("bbCustomerName").focus();
+  }
+ 
+  function closeBooking() {
+    modal.classList.remove("bb-is-open");
+    modal.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+    if (previousFocus && typeof previousFocus.focus === "function") previousFocus.focus();
+  }
+ 
+  document.addEventListener("click", function (event) {
+    const trigger = event.target.closest("[data-bb-book]");
+    if (trigger) {
+      event.preventDefault();
+      openBooking(trigger.getAttribute("data-bb-book"));
+      return;
+    }
+    if (event.target.closest("[data-bb-close]") || event.target === modal) closeBooking();
+  });
+ 
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape" && modal.classList.contains("bb-is-open")) closeBooking();
+  });
+ 
+  /* ================= SUBMIT ================= */
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    get("bbBookingResult").textContent = "";
+    let firstInvalid = null;
+ 
+    const selected = destinationList.querySelector('input[name="bbDestination"]:checked');
+    if (!selected) {
+      get("bbDestinationError").classList.add("bb-show");
+      firstInvalid = destinationList.querySelector('input[name="bbDestination"]');
+    } else {
+      get("bbDestinationError").classList.remove("bb-show");
+    }
+ 
+    fieldIds.forEach(function (id) {
+      if (!validateField(id) && !firstInvalid) firstInvalid = get(id);
+    });
+ 
+    if (firstInvalid) {
+      firstInvalid.focus();
+      return;
+    }
+ 
+    const name = get("bbCustomerName").value.trim();
+    const type = get("bbTravelType").value;
+    get("bbBookingResult").textContent =
+      "Thank you, " + name + "! Your " + type.toLowerCase() +
+      " booking request for " + selected.value + " is complete in this demo.";
+  });
+})();
+ 
+
+/////////////// download trip plan (Word) ////////////////////////
+document.addEventListener("click", function (event) {
+  var btn = event.target.closest("[data-download-plan]");
+  if (!btn) return;
+  var modal = btn.closest(".overlay");
+  if (!modal) return;
+  if (!window.docx) { alert("Word file library could not load. Please check your internet and try again."); return; }
+
+  var d = window.docx;
+  var txt = function (sel) { var el = modal.querySelector(sel); return el ? el.textContent.replace(/\s+/g, " ").trim() : ""; };
+  var NAVY = "0A2A4F", LIGHT = "EAF5FD", LINE = "C9DDEB", GREY = "5B6B78";
+
+  var name = txt("h2");
+  var loc = txt(".loc").replace(/^📍\s*/, "");
+  var desc = txt(".desc");
+
+  // stats (Best Time, Avg. Temp, Beach Type, Clarity)
+  var rows = [["Location", loc]];
+  modal.querySelectorAll(".stats > div").forEach(function (s) {
+    var b = s.querySelector("b");
+    var value = b ? b.textContent.trim() : "";
+    var label = s.textContent.replace(value, "").trim();
+    rows.push([label, value]);
+  });
+  // quick info (Travel Cost etc.) - skip ones already added
+  modal.querySelectorAll(".modal-info").forEach(function (s) {
+    var b = s.querySelector("b");
+    var label = b ? b.textContent.trim() : "";
+    var value = s.textContent.replace(label, "").trim();
+    if (label && label !== "Location" && label !== "Best Time") rows.push([label, value]);
+  });
+  var highlights = [];
+  modal.querySelectorAll(".right ul li").forEach(function (li) { highlights.push(li.textContent.trim()); });
+
+  var border = { style: d.BorderStyle.SINGLE, size: 4, color: LINE };
+  var borders = { top: border, bottom: border, left: border, right: border };
+  var margins = { top: 100, bottom: 100, left: 140, right: 140 };
+  var CW = 9026, W1 = 3000;
+
+  function cell(text, w, o) {
+    o = o || {};
+    return new d.TableCell({
+      width: { size: w, type: d.WidthType.DXA }, borders: borders, margins: margins,
+      shading: o.fill ? { fill: o.fill, type: d.ShadingType.CLEAR, color: "auto" } : undefined,
+      children: [new d.Paragraph({ spacing: { after: 0 }, children: [new d.TextRun({ text: text, bold: o.bold, size: 22, color: o.color })] })]
+    });
+  }
+  function table(list) {
+    return new d.Table({
+      width: { size: CW, type: d.WidthType.DXA }, columnWidths: [W1, CW - W1],
+      rows: list.map(function (r) {
+        return new d.TableRow({ children: [cell(r[0], W1, { fill: LIGHT, bold: true, color: NAVY }), cell(r[1], CW - W1)] });
+      })
+    });
+  }
+  function h2(text, pageBreak) {
+    return new d.Paragraph({
+      heading: d.HeadingLevel.HEADING_2, pageBreakBefore: !!pageBreak,
+      spacing: { before: 320, after: 140 },
+      border: { bottom: { style: d.BorderStyle.SINGLE, size: 8, color: "078EB4", space: 4 } },
+      children: [new d.TextRun({ text: text, bold: true, size: 28, color: NAVY })]
+    });
+  }
+  function bullet(text) {
+    return new d.Paragraph({ numbering: { reference: "bullets", level: 0 }, spacing: { after: 80 },
+      children: [new d.TextRun({ text: text, size: 22 })] });
+  }
+  function banner(text, size, color, after) {
+    return new d.Paragraph({
+      spacing: { before: 0, after: after || 0 },
+      shading: { fill: NAVY, type: d.ShadingType.CLEAR, color: "auto" },
+      children: [new d.TextRun({ text: " " + text, bold: size > 30, size: size, color: color })]
+    });
+  }
+
+  var children = [
+    banner("BEAUTY OF BEACHES  |  TRIP PLAN", 20, "8FD0F7"),
+    banner(name, 60, "FFFFFF"),
+    banner(loc, 26, "B8E0FA", 240),
+    new d.Paragraph({ spacing: { after: 200 }, children: [new d.TextRun({ text: desc, size: 24, color: "1F3A52" })] }),
+    h2("Beach at a Glance"),
+    table(rows),
+    new d.Paragraph({ spacing: { before: 80, after: 120 }, children: [new d.TextRun({
+      text: "Travel cost is the estimate shown on the Beauty Of Beaches website. Actual prices change with season, route and booking time.",
+      size: 18, italics: true, color: GREY })] }),
+    h2("Highlights")
+  ].concat(highlights.map(bullet)).concat([
+    h2("Plan Your Trip"),
+    new d.Paragraph({ spacing: { after: 100 }, children: [new d.TextRun({ text: "Fill in your details before you book.", size: 20, color: GREY })] }),
+    table([["Travel Dates", ""], ["Number of Travelers", ""], ["Departure City", ""],
+           ["Travel By (Bus / Flight)", ""], ["Where to Stay", ""], ["Total Budget", ""]]),
+    h2("Packing Checklist", true)
+  ]).concat([
+    "CNIC / passport, tickets and booking confirmations", "Swimwear, towel and a change of clothes",
+    "Sunscreen, sunglasses and a hat", "Water bottle and light snacks",
+    "Phone, charger and a power bank", "Camera for the best photo spots",
+    "Basic first-aid kit and personal medicines"
+  ].map(bullet)).concat([h2("My Notes")]).concat(
+    [1, 2, 3, 4].map(function () {
+      return new d.Paragraph({ spacing: { before: 0, after: 0, line: 480 },
+        border: { bottom: { style: d.BorderStyle.SINGLE, size: 4, color: LINE, space: 1 } },
+        children: [new d.TextRun({ text: "" })] });
+    })
+  );
+
+  var doc = new d.Document({
+    creator: "Beauty Of Beaches",
+    title: name + " - Trip Plan",
+    styles: {
+      default: { document: { run: { font: "Arial", size: 22 } } },
+      paragraphStyles: [{ id: "Heading2", name: "Heading 2", basedOn: "Normal", next: "Normal", quickFormat: true,
+        run: { size: 28, bold: true, font: "Arial", color: NAVY }, paragraph: { spacing: { before: 320, after: 140 }, outlineLevel: 1 } }]
+    },
+    numbering: { config: [{ reference: "bullets", levels: [{ level: 0, format: d.LevelFormat.BULLET, text: "\u2022",
+      alignment: d.AlignmentType.LEFT, style: { paragraph: { indent: { left: 540, hanging: 270 } } } }] }] },
+    sections: [{
+      properties: { page: { size: { width: 11906, height: 16838 }, margin: { top: 1000, right: 1440, bottom: 1000, left: 1440 } } },
+      footers: { default: new d.Footer({ children: [new d.Paragraph({ alignment: d.AlignmentType.CENTER, children: [
+        new d.TextRun({ text: "Beauty Of Beaches  \u2022  " + name + "  \u2022  Page ", size: 18, color: GREY }),
+        new d.TextRun({ children: [d.PageNumber.CURRENT], size: 18, color: GREY })
+      ] })] }) },
+      children: children
+    }]
+  });
+
+  d.Packer.toBlob(doc).then(function (blob) {
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement("a");
+    a.href = url;
+    a.download = name.replace(/[\\/:*?"<>|]/g, "") + " Trip Plan.docx";
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
+  });
+});
+
+/* Fallback: if a bus route photo fails to load, show a coloured placeholder */
+(function () {
+  document.querySelectorAll(".bus-item img.thumb").forEach(function (img, i) {
+    function swap() {
+      const d = document.createElement("div");
+      d.className = "thumb th-" + ((i % 3) + 1);
+      d.setAttribute("role", "img");
+      d.setAttribute("aria-label", img.alt);
+      img.replaceWith(d);
+    }
+    img.addEventListener("error", swap);
+    if (img.complete && img.naturalWidth === 0) swap();
+  });
+})();
+</script>
+  <!-- docx library (makes the Word trip plan) -->
+    <script src="https://cdn.jsdelivr.net/npm/docx@8.5.0/build/index.umd.js"></script>
+  <!-- bootstrap js  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
